@@ -1,11 +1,11 @@
 "use client";
 
-import { Scale, ShieldCheck, Heart } from "lucide-react";
+import { Scale, ShieldCheck } from "lucide-react";
 import { firmInfo } from "@/data/firmData";
 
 export default function Footer() {
   return (
-    <footer className="bg-slate-950 text-slate-400 border-t border-slate-800 text-xs py-12">
+    <footer className="bg-slate-950 text-slate-400 border-t border-slate-800 text-xs py-12 transition-colors duration-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
         
         {/* Top Footer Section */}
@@ -24,7 +24,7 @@ export default function Footer() {
             <p className="text-slate-400 leading-relaxed text-xs max-w-md">
               {firmInfo.tagline}. Dedicated to high-stakes courtroom litigation, constitutional writ petitions, corporate arbitration, and land recovery.
             </p>
-            <p className="text-[11px] text-gold-400/90 font-mono">
+            <p className="text-[11px] text-gold-400 font-mono">
               {firmInfo.legacy}
             </p>
           </div>
@@ -58,7 +58,7 @@ export default function Footer() {
         </div>
 
         {/* Bar Council Compliance Disclaimer */}
-        <div className="p-4 rounded-xl bg-slate-900/60 border border-slate-800 text-[11px] text-slate-400 leading-relaxed space-y-2">
+        <div className="p-4 rounded-xl bg-slate-900/80 border border-slate-800 text-[11px] text-slate-300 leading-relaxed space-y-2">
           <div className="flex items-center gap-2 font-bold text-gold-400">
             <ShieldCheck className="w-4 h-4" />
             <span>Bar Council Compliance & Legal Disclaimer</span>
@@ -71,7 +71,7 @@ export default function Footer() {
         {/* Copyright */}
         <div className="pt-4 flex flex-col sm:flex-row items-center justify-between gap-4 text-slate-400 text-[11px]">
           <p>© {new Date().getFullYear()} Bhagwati Prasad & Associates. All rights reserved.</p>
-          <p className="flex items-center gap-1">
+          <p className="flex items-center gap-1 text-slate-400">
             Built with legal precision & modern web technology
           </p>
         </div>

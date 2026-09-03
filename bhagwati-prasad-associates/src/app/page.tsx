@@ -32,7 +32,7 @@ export default function Home() {
   };
 
   return (
-    <main className="min-h-screen bg-slate-950 dark:bg-legal-950 text-slate-100 selection:bg-gold-500 selection:text-slate-950">
+    <main className="min-h-screen bg-slate-50 dark:bg-legal-950 text-slate-900 dark:text-slate-100 selection:bg-gold-500 selection:text-slate-950 transition-colors duration-200">
       {/* Mandatory Bar Council of India Popup Disclaimer */}
       <BarCouncilDisclaimerModal />
 
