@@ -1,6 +1,6 @@
 "use client";
 
-import { Scale, ShieldCheck } from "lucide-react";
+import { Scale, ShieldCheck, MapPin, Phone, Mail } from "lucide-react";
 import { firmInfo } from "@/data/firmData";
 
 export default function Footer() {
@@ -22,7 +22,7 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-slate-400 leading-relaxed text-xs max-w-md">
-              {firmInfo.tagline}. Dedicated to high-stakes courtroom litigation, constitutional writ petitions, corporate arbitration, and land recovery.
+              {firmInfo.tagline}. A sole proprietary concern of Advocate Sumeet Gupta. Dedicated to courtroom advocacy across Guwahati High Court, DRT, AFT, CJM Court, and District Courts throughout Assam.
             </p>
             <p className="text-[11px] text-gold-400 font-mono">
               {firmInfo.legacy}
@@ -34,25 +34,41 @@ export default function Footer() {
             <h4 className="font-serif font-bold text-white text-sm mb-3">Quick Navigation</h4>
             <ul className="space-y-2 text-xs">
               <li><a href="#about" className="hover:text-gold-400 transition-colors">About Our Chambers</a></li>
-              <li><a href="#attorneys" className="hover:text-gold-400 transition-colors">Legal Partners (Girish & Sumeet)</a></li>
+              <li><a href="#attorneys" className="hover:text-gold-400 transition-colors">Our Advocates (Sumeet & Girish)</a></li>
               <li><a href="#practice-areas" className="hover:text-gold-400 transition-colors">Practice Areas & Specializations</a></li>
-              <li><a href="#case-results" className="hover:text-gold-400 transition-colors">Representative Precedents</a></li>
-              <li><a href="#contact" className="hover:text-gold-400 transition-colors">Chamber Contact & Helpline</a></li>
+              <li><a href="#case-results" className="hover:text-gold-400 transition-colors">Representative Matters</a></li>
+              <li><a href="#contact" className="hover:text-gold-400 transition-colors">Chamber Contact & Appointment</a></li>
             </ul>
           </div>
 
-          {/* Legal Emergency */}
+          {/* Chamber Contact Details */}
           <div className="space-y-2">
-            <h4 className="font-serif font-bold text-white text-sm mb-3">Emergency Desk</h4>
-            <p className="text-xs text-slate-400">
-              For urgent High Court stay applications or weekend bail motions:
-            </p>
-            <p className="text-sm font-bold text-gold-400 font-mono pt-1">
-              +91 99990 88776
-            </p>
-            <p className="text-[11px] text-slate-400 pt-2">
-              High Court Lawyers Chambers Complex, New Delhi
-            </p>
+            <h4 className="font-serif font-bold text-white text-sm mb-3">Chamber Direct Desk</h4>
+            <div className="space-y-2 text-xs text-slate-400">
+              <p className="flex items-center gap-2">
+                <Phone className="w-3.5 h-3.5 text-gold-400 shrink-0" />
+                <a href={`tel:${firmInfo.contact.phone}`} className="hover:text-white font-mono text-gold-300 font-bold">
+                  {firmInfo.contact.phone}
+                </a>
+              </p>
+              <div className="flex flex-col gap-1">
+                <p className="flex items-center gap-2">
+                  <Mail className="w-3.5 h-3.5 text-gold-400 shrink-0" />
+                  <a href={`mailto:${firmInfo.contact.sumeetEmail}`} className="hover:text-white font-mono text-[11px]">
+                    {firmInfo.contact.sumeetEmail}
+                  </a>
+                </p>
+                <p className="flex items-center gap-2 pl-5">
+                  <a href={`mailto:${firmInfo.contact.girishEmail}`} className="hover:text-white font-mono text-[11px]">
+                    {firmInfo.contact.girishEmail}
+                  </a>
+                </p>
+              </div>
+              <p className="flex items-start gap-2">
+                <MapPin className="w-3.5 h-3.5 text-gold-400 shrink-0 mt-0.5" />
+                <span className="leading-relaxed">{firmInfo.contact.address} <span className="text-gold-400/90 font-medium">(Landmark: {firmInfo.contact.landmark})</span></span>
+              </p>
+            </div>
           </div>
 
         </div>
@@ -64,15 +80,15 @@ export default function Footer() {
             <span>Bar Council Compliance & Legal Disclaimer</span>
           </div>
           <p>
-            As per the rules of the Bar Council of India, law firms and advocates are strictly prohibited from soliciting work or advertising in any form. By accessing this website, the user acknowledges that they are seeking information regarding Bhagwati Prasad & Associates of their own accord and that there has been no advertisement, personal communication, or solicitation by the firm or its attorneys.
+            As per the rules of the Bar Council of India, advocates and legal practitioners are strictly prohibited from soliciting work or advertising in any form. By accessing this website, the user acknowledges that they are seeking information regarding {firmInfo.name} of their own accord and that there has been no advertisement, personal communication, solicitation, or inducement by the firm or its advocates.
           </p>
         </div>
 
         {/* Copyright */}
         <div className="pt-4 flex flex-col sm:flex-row items-center justify-between gap-4 text-slate-400 text-[11px]">
-          <p>© {new Date().getFullYear()} Bhagwati Prasad & Associates. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} {firmInfo.name}. All rights reserved.</p>
           <p className="flex items-center gap-1 text-slate-400">
-            Built with legal precision & modern web technology
+            Guwahati High Court & Courts of Assam Legal Advocacy
           </p>
         </div>
 

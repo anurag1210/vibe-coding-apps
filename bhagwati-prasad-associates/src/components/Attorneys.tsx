@@ -19,13 +19,13 @@ export default function Attorneys({ onOpenBooking }: AttorneysProps) {
         <div className="text-center max-w-3xl mx-auto mb-16">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-800 dark:text-gold-400 dark:bg-gold-500/10 dark:border-gold-500/30 text-xs font-semibold uppercase tracking-wider mb-4">
             <UserCheck className="w-4 h-4" />
-            <span>Our Legal Leadership</span>
+            <span>Chamber Advocates</span>
           </div>
           <h2 className="font-serif text-3xl sm:text-4xl font-bold tracking-tight text-slate-900 dark:text-white mb-4">
-            Meet Our Legal Partners
+            Our Advocates & Counsel
           </h2>
           <p className="text-slate-600 dark:text-slate-300 text-base sm:text-lg">
-            A powerful combination of High Court courtroom practice, LL.M expertise, and modern commercial legal strategy.
+            Direct courtroom representation and strategic counseling by Sole Proprietor Advocate Sumeet Gupta, guided by the senior jurisprudence of Advocate Girish Kumar Gupta in the Guwahati High Court.
           </p>
         </div>
 

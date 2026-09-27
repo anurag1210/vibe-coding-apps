@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Bhagwati Prasad & Associates | Advocates & Legal Consultants",
-  description: "Premier law firm portfolio of Senior Advocate Girish Gupta & Managing Partner Sumeet Gupta. Specializing in High Court & Supreme Court Writs, Civil Property Disputes, Commercial Arbitration, and Criminal Defense.",
-  keywords: ["Bhagwati Prasad & Associates", "Girish Gupta Advocate", "Sumeet Gupta Lawyer", "High Court Lawyers Delhi", "Supreme Court Advocates", "Civil Property Partition Lawyer", "Commercial Arbitration Advocates"],
+  title: "Bhagawati Legal Consultants & Advocates | Guwahati High Court & Assam",
+  description: "Bhagawati Legal Consultants & Advocates is a sole proprietary concern of Advocate Sumeet Gupta, continuing the legal heritage of Late Bhagawati Prasad (District Court Nagaon) and Senior Advocate Girish Kumar Gupta. Comprehensive legal advocacy in Guwahati High Court, DRT, AFT, Family Court, CJM Court, and District & Sessions Courts across Assam.",
+  keywords: ["Bhagawati Legal Consultants & Advocates", "Advocate Sumeet Gupta", "Advocate Girish Kumar Gupta", "Guwahati High Court Advocates", "Guwahati Lawyers", "Service Matters Guwahati High Court", "Bail Matters High Court Assam", "DRT Guwahati", "AFT Guwahati", "Family Court Guwahati", "MACT Assam"],
 };
 
 export default function RootLayout({

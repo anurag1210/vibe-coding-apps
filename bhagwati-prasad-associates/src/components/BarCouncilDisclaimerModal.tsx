@@ -72,7 +72,7 @@ export default function BarCouncilDisclaimerModal() {
           </div>
 
           <p className="text-slate-500 dark:text-slate-400 text-[11px] italic">
-            If you require specific legal advice or representation for your matter, please consult Senior Counsel Girish Gupta or Advocate Sumeet Gupta directly through formal appointment.
+            If you require specific legal advice or representation for your matter, please consult Advocate Sumeet Gupta or Senior Advocate Girish Kumar Gupta directly through formal appointment.
           </p>
         </div>
 

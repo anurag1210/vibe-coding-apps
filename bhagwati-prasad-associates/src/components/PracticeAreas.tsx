@@ -19,6 +19,7 @@ const iconMap: Record<string, any> = {
   Lock,
   HeartHandshake,
   Landmark,
+  CheckCircle2,
 };
 
 export default function PracticeAreas({ onOpenBooking }: PracticeAreasProps) {
@@ -26,18 +27,26 @@ export default function PracticeAreas({ onOpenBooking }: PracticeAreasProps) {
   const [selectedArea, setSelectedArea] = useState<PracticeArea | null>(null);
 
   const filterOptions = [
-    { label: "All Practice Areas", value: "all" },
-    { label: "Civil & Land Litigation", value: "civil" },
-    { label: "Criminal & Financial Defense", value: "criminal" },
-    { label: "Corporate & Arbitration", value: "corporate" },
-    { label: "Writs & High Court", value: "writs" },
+    { label: "All Practice Matters", value: "all" },
+    { label: "High Court & Tribunals", value: "tribunals" },
+    { label: "Criminal, Bail & Cheque Bounce", value: "criminal" },
+    { label: "Civil, Family & Registration", value: "civil" },
+    { label: "Arbitration & Contracts", value: "arbitration" },
   ];
 
   const filteredAreas = practiceAreas.filter((area) => {
-    if (activeFilter === "civil") return area.id.includes("civil") || area.id.includes("property") || area.id.includes("matrimonial");
-    if (activeFilter === "criminal") return area.id.includes("criminal") || area.id.includes("cyber");
-    if (activeFilter === "corporate") return area.id.includes("corporate") || area.id.includes("arbitration") || area.id.includes("banking");
-    if (activeFilter === "writs") return area.id.includes("constitutional") || area.id.includes("civil");
+    if (activeFilter === "tribunals") {
+      return area.id.includes("service") || area.id.includes("drt") || area.id.includes("aft");
+    }
+    if (activeFilter === "criminal") {
+      return area.id.includes("bail") || area.id.includes("cheque");
+    }
+    if (activeFilter === "civil") {
+      return area.id.includes("family") || area.id.includes("mact") || area.id.includes("registration") || area.id.includes("succession");
+    }
+    if (activeFilter === "arbitration") {
+      return area.id.includes("arbitration");
+    }
     return true;
   });
 
@@ -49,13 +58,13 @@ export default function PracticeAreas({ onOpenBooking }: PracticeAreasProps) {
         <div className="text-center max-w-3xl mx-auto mb-12">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-800 dark:text-gold-400 dark:bg-gold-500/10 dark:border-gold-500/30 text-xs font-semibold uppercase tracking-wider mb-4">
             <Scale className="w-4 h-4" />
-            <span>Appellate & Trial Specializations</span>
+            <span>Chamber Practice Matters</span>
           </div>
           <h2 className="font-serif text-3xl sm:text-4xl font-bold tracking-tight text-slate-900 dark:text-white mb-4">
             Comprehensive Legal Practice Areas
           </h2>
           <p className="text-slate-600 dark:text-slate-300 text-base sm:text-lg">
-            Strategic representation tailored to complex litigation, corporate disputes, writ petitions, and ancestral land recovery.
+            Strategic representation across Guwahati High Court, statutory tribunals (DRT & AFT), Family Courts, CJM & District Courts across Assam.
           </p>
         </div>
 

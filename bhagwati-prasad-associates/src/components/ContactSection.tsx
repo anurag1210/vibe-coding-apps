@@ -52,35 +52,31 @@ export default function ContactSection() {
               <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed pl-8">
                 {firmInfo.contact.address}
               </p>
+              {firmInfo.contact.landmark && (
+                <p className="text-xs text-amber-800 dark:text-gold-400 font-medium pl-8">
+                  📍 <strong>Landmark:</strong> {firmInfo.contact.landmark}
+                </p>
+              )}
             </div>
 
             {/* Direct Phone Lines */}
             <div className="p-6 rounded-2xl bg-slate-50 dark:bg-slate-950/80 border border-slate-200 dark:border-slate-800 space-y-3 shadow-sm">
               <div className="flex items-center gap-3 text-amber-800 dark:text-gold-400 font-bold">
                 <Phone className="w-5 h-5 shrink-0" />
-                <span className="font-serif text-lg text-slate-900 dark:text-white">Direct Desk Lines</span>
+                <span className="font-serif text-lg text-slate-900 dark:text-white">Direct Chamber Contact</span>
               </div>
               <div className="pl-8 space-y-2 text-xs sm:text-sm text-slate-600 dark:text-slate-300">
-                <p><strong className="text-amber-800 dark:text-gold-400">Girish Gupta (Senior Advocate):</strong> +91 98100 12345</p>
-                <p><strong className="text-amber-800 dark:text-gold-400">Sumeet Gupta (Managing Partner):</strong> +91 98711 54321</p>
+                <p>
+                  <strong className="text-amber-800 dark:text-gold-400">Advocate Sumeet Gupta:</strong>{" "}
+                  <a href={`tel:${firmInfo.contact.sumeetPhone}`} className="hover:underline font-mono text-slate-900 dark:text-white">
+                    {firmInfo.contact.sumeetPhone}
+                  </a>
+                </p>
+                <p>
+                  <strong className="text-amber-800 dark:text-gold-400">Advocate Girish Kumar Gupta:</strong>{" "}
+                  <span className="text-slate-500 dark:text-slate-400">By Appointment</span>
+                </p>
               </div>
-            </div>
-
-            {/* Emergency Helpline Highlight */}
-            <div className="p-6 rounded-2xl bg-gradient-to-r from-amber-50 to-orange-50 dark:from-amber-950/60 dark:via-slate-950 dark:to-slate-950 border border-amber-300 dark:border-gold-500/40 space-y-3 shadow-sm">
-              <div className="flex items-center gap-2 text-amber-800 dark:text-gold-400 font-bold text-sm">
-                <ShieldCheck className="w-5 h-5 text-amber-600 dark:text-gold-400 animate-pulse" />
-                <span>24/7 Emergency Bail & Stay Helpline</span>
-              </div>
-              <p className="text-xs text-slate-700 dark:text-slate-300 pl-7">
-                For urgent weekend bail motions or emergency High Court stay petitions:
-              </p>
-              <a
-                href={`tel:${firmInfo.contact.emergencyPhone}`}
-                className="inline-block ml-7 text-sm font-bold text-amber-900 hover:text-amber-700 dark:text-gold-300 dark:hover:text-white underline font-mono"
-              >
-                +91 99990 88776
-              </a>
             </div>
 
             {/* Email & Hours */}
@@ -89,10 +85,27 @@ export default function ContactSection() {
                 <Clock className="w-5 h-5 shrink-0" />
                 <span className="font-serif text-lg text-slate-900 dark:text-white">Chamber Hours</span>
               </div>
-              <p className="pl-8 text-slate-600 dark:text-slate-300">{firmInfo.contact.hours}</p>
-              <div className="flex items-center gap-3 text-amber-800 dark:text-gold-400 font-bold pt-2">
-                <Mail className="w-5 h-5 shrink-0" />
-                <span className="text-slate-900 dark:text-white text-xs sm:text-sm font-mono">{firmInfo.contact.email}</span>
+              <p className="pl-8 text-slate-600 dark:text-slate-300 font-semibold">{firmInfo.contact.hours}</p>
+              
+              <div className="pt-2 border-t border-slate-200 dark:border-slate-800 space-y-2">
+                <div className="flex items-center gap-2 text-amber-800 dark:text-gold-400 font-bold">
+                  <Mail className="w-4 h-4 shrink-0" />
+                  <span className="text-xs uppercase tracking-wider">Email Inquiries:</span>
+                </div>
+                <div className="pl-6 space-y-1 font-mono text-xs">
+                  <p>
+                    <span className="text-slate-500 dark:text-slate-400">Sumeet Gupta: </span>
+                    <a href={`mailto:${firmInfo.contact.sumeetEmail}`} className="text-slate-900 dark:text-white hover:underline">
+                      {firmInfo.contact.sumeetEmail}
+                    </a>
+                  </p>
+                  <p>
+                    <span className="text-slate-500 dark:text-slate-400">Girish Kumar Gupta: </span>
+                    <a href={`mailto:${firmInfo.contact.girishEmail}`} className="text-slate-900 dark:text-white hover:underline">
+                      {firmInfo.contact.girishEmail}
+                    </a>
+                  </p>
+                </div>
               </div>
             </div>
 
@@ -105,7 +118,7 @@ export default function ContactSection() {
               <div className="border-b border-slate-200 dark:border-slate-800 pb-4">
                 <h3 className="font-serif text-2xl font-bold text-slate-900 dark:text-white">Send Direct Message to Chambers</h3>
                 <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400 mt-1">
-                  All communications are strictly confidential and protected by attorney-client privilege.
+                  All communications are strictly confidential and protected by advocate-client privilege.
                 </p>
               </div>
 
@@ -116,7 +129,7 @@ export default function ContactSection() {
                   </div>
                   <h4 className="font-serif text-xl font-bold text-slate-900 dark:text-white">Message Transmitted to Chambers</h4>
                   <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 max-w-md mx-auto">
-                    Thank you, {formData.name}. Senior Counsel Girish Gupta / Advocate Sumeet Gupta will review your legal query and respond within 4 business hours.
+                    Thank you, {formData.name}. Advocate Sumeet Gupta will review your legal query and get back to you promptly.
                   </p>
                   <button
                     onClick={() => {

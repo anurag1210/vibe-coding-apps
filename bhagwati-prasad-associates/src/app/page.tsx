@@ -7,8 +7,6 @@ import AboutFirm from "@/components/AboutFirm";
 import Attorneys from "@/components/Attorneys";
 import PracticeAreas from "@/components/PracticeAreas";
 import CaseResults from "@/components/CaseResults";
-import Testimonials from "@/components/Testimonials";
-import LegalFaq from "@/components/LegalFaq";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import BookingModal from "@/components/BookingModal";
@@ -42,8 +40,6 @@ export default function Home() {
       <Attorneys onOpenBooking={(attorneyName) => handleOpenBooking(attorneyName)} />
       <PracticeAreas onOpenBooking={(attorneyName, practiceArea) => handleOpenBooking(attorneyName, practiceArea)} />
       <CaseResults />
-      <Testimonials />
-      <LegalFaq />
       <ContactSection />
       <Footer />
 

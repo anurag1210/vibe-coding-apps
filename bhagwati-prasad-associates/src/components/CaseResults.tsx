@@ -12,13 +12,13 @@ export default function CaseResults() {
         <div className="text-center max-w-3xl mx-auto mb-16">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-800 dark:text-gold-400 dark:bg-gold-500/10 dark:border-gold-500/30 text-xs font-semibold uppercase tracking-wider mb-4">
             <Trophy className="w-4 h-4" />
-            <span>Representative Precedents</span>
+            <span>Representative Forum Experience</span>
           </div>
           <h2 className="font-serif text-3xl sm:text-4xl font-bold tracking-tight text-slate-900 dark:text-white mb-4">
-            Benchmark Court Victories & Arbitral Awards
+            Key Forum Appearances & Case Matters
           </h2>
           <p className="text-slate-600 dark:text-slate-300 text-base sm:text-lg">
-            A testament to our rigorous legal preparation, statutory mastery, and persuasive advocacy across High Courts & Arbitral Panels.
+            A proven track record successfully tackling Service and Bail matters in Guwahati High Court, DRT, Armed Forces Tribunal, and Assam Courts.
           </p>
         </div>
 
@@ -66,7 +66,7 @@ export default function CaseResults() {
               {/* Bottom Decorative Line */}
               <div className="pt-6 mt-6 border-t border-slate-200 dark:border-slate-800/80 flex items-center justify-between text-[11px] text-slate-500 dark:text-slate-400 font-mono">
                 <span>Verified Legal Record</span>
-                <span className="text-amber-800 dark:text-gold-400 font-semibold">Bhagwati Prasad & Assoc.</span>
+                <span className="text-amber-800 dark:text-gold-400 font-semibold">Bhagawati Legal Consultants & Advocates</span>
               </div>
 
             </div>

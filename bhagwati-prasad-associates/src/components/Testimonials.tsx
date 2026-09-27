@@ -18,7 +18,7 @@ export default function Testimonials() {
             Trusted by Business Leaders & Families Alike
           </h2>
           <p className="text-slate-600 dark:text-slate-300 text-base sm:text-lg">
-            Hear directly from clients who relied on Bhagwati Prasad & Associates for critical courtroom advocacy and strategic legal guidance.
+            Hear directly from clients who relied on Bhagawati Legal Consultants & Advocates for critical courtroom advocacy and strategic legal guidance.
           </p>
         </div>
 

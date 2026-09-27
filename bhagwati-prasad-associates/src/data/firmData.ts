@@ -51,268 +51,250 @@ export interface FAQ {
 }
 
 export const firmInfo = {
-  name: "Bhagwati Prasad & Associates",
-  shortName: "BP & Associates",
-  legacy: "Chambers of Late Advocate Bhagwati Prasad",
-  tagline: "High Court & Appellate Legal Advocacy",
-  heroSubtitle: "Comprehensive legal representation across High Courts, District Courts, Family Courts, AFT, DRT, and Arbitral Panels, combining seasoned judicial wisdom with modern tactical litigation.",
+  name: "Bhagawati Legal Consultants & Advocates",
+  shortName: "Bhagawati Legal",
+  legacy: "Carrying forward the legal heritage of Late Advocate Bhagawati Prasad (District Court Nagaon)",
+  tagline: "Guwahati High Court & Appellate Legal Advocacy",
+  heroSubtitle: "A sole proprietary concern of Advocate Sumeet Gupta, carrying forward the legal heritage of Late Bhagawati Prasad (District Court Nagaon) and Senior Advocate Girish Kumar Gupta (Guwahati High Court). Comprehensive legal representation across Guwahati High Court, DRT, AFT, Family Court, CJM Court, and District & Sessions Courts of Assam.",
   stats: [
-    { label: "Combined Legal Experience", value: "9 Years" },
-    { label: "Cases Handled & Won", value: "500+" },
-    { label: "Courts & Tribunals", value: "High Court, Family Court, AFT & DRT" },
-    { label: "Multilingual Legal Service", value: "English, Assamese, Hindi, Bengali" },
+    { label: "Generations of Legal Heritage", value: "3" },
+    { label: "Jurisdiction & Reach", value: "Guwahati High Court & Assam" },
+    { label: "Tribunals & Forums", value: "DRT, AFT, Family, MACT & CJM" },
+    { label: "Consultation Mode", value: "By Appointment" },
   ],
   contact: {
-    address: "Chamber Suite 402, High Court Lawyers Block & Mathura Nagar Legal Desk",
-    phone: "+91 98100 12345 / +91 98711 54321",
-    emergencyPhone: "+91 99990 88776",
-    email: "girish.gupta@bhagwatiprasadlaw.com",
-    hours: "Mon - Sat: 9:00 AM - 8:30 PM (Sunday by appointment)",
+    address: "18, Santipath, 3rd Bye Lane, Mathuranagar, P.O. Assam Sachivalaya, Guwahati - 781006",
+    landmark: "Backside of Down Town Hospital",
+    chamberCity: "Guwahati",
+    phone: "+91 70020 69417",
+    sumeetPhone: "+91 70020 69417",
+    email: "advocatesumeetg@gmail.com",
+    sumeetEmail: "advocatesumeetg@gmail.com",
+    girishEmail: "mrgkgupta@gmail.com",
+    hours: "By Appointment",
   }
 };
 
 export const attorneys: Attorney[] = [
   {
-    id: "girish-gupta",
-    name: "Girish Kumar Gupta",
-    role: "Senior Partner & Lead Counsel",
-    experience: "8 Years Experience | LL.M",
-    image: "/girish-gupta.jpg",
-    education: [
-      "LL.M (Master of Laws) - Specialization in Civil & Matrimonial Jurisprudence",
-      "LL.B (Honours) - High Court Bar Association",
-      "Certified Advocate & Legal Consultant"
-    ],
-    barEnrollment: "D/2018/HC",
-    courts: ["High Court (H.C.)", "District & Sessions Court (D.C.)", "Family Court", "Armed Forces Tribunal (AFT)", "Debt Recovery Tribunal (DRT)"],
-    specialties: [
-      "Divorce & Matrimonial Disputes",
-      "Commercial Contracts & Agreements",
-      "Cheque Bounce (Sec 138 NI Act)",
-      "Armed Forces Tribunal (AFT) & Service Law",
-      "Urgent Criminal Bail & FIR Defense",
-      "DRT & Financial Debt Recovery"
-    ],
-    languages: ["English", "Assamese", "Hindi", "Bengali"],
-    bio: "Advocate Girish Kumar Gupta is an accomplished advocate holding a Master of Laws (LL.M) with 8 years of dedicated legal practice. Operating across High Courts, District Courts, Family Courts, AFT, and DRT, Advocate Gupta has established a stellar track record in civil litigation, family law, cheque bounce recovery, and service petitions.",
-    achievements: [
-      "8 Years of active practice in High Court, Family Court, and Tribunals",
-      "Represented 400+ complex civil, matrimonial, and cheque recovery matters",
-      "Key victories before Armed Forces Tribunal (AFT) for military personnel service rights",
-      "Multi-lingual advocate fluent in English, Assamese, Hindi, and Bengali"
-    ],
-    quote: "Justice demands rigorous statutory interpretation, absolute client commitment, and honest guidance at every stage of litigation.",
-    phone: "+91 98100 12345",
-    email: "girish.gupta@bhagwatiprasadlaw.com"
-  },
-  {
     id: "sumeet-gupta",
-    name: "Sumeet Gupta",
-    role: "Junior Partner & Associate Advocate",
-    experience: "1 Year Experience",
+    name: "Advocate Sumeet Gupta",
+    role: "Sole Proprietor & Practicing Advocate",
+    experience: "Sole Proprietor | Guwahati High Court & Assam Courts",
     image: "/sumeet-gupta.png",
     education: [
-      "B.A. LL.B (Hons.) - Faculty of Law",
-      "Post-Graduate Diploma in Corporate Law & Cyber Rights",
-      "Certified Legal Researcher"
+      "B.A. LL.B (Honours)",
+      "Advocate - Guwahati High Court Bar Association",
+      "Specialized in Appellate Advocacy & Tribunal Litigation"
     ],
-    barEnrollment: "D/2025/DEL",
-    courts: ["High Court", "District & Sessions Courts", "NCLT & DRT", "Commercial Tribunals"],
+    barEnrollment: "Guwahati High Court Bar Association",
+    courts: [
+      "Guwahati High Court",
+      "Debt Recovery Tribunal (DRT)",
+      "Armed Forces Tribunal (AFT)",
+      "Family Court Guwahati",
+      "CJM Court & District & Sessions Court Guwahati",
+      "Motor Accident Claims Tribunal (MACT)"
+    ],
     specialties: [
-      "Corporate & Commercial Disputes",
-      "Criminal Defense & Bail Applications",
-      "Cyber Crime & Financial Offenses",
-      "Trademark & Intellectual Property",
-      "Contract Drafting & Legal Research"
+      "Service Matters (Guwahati High Court)",
+      "Bail Matters & Criminal Defense",
+      "Debt Recovery Tribunal (DRT)",
+      "Armed Forces Tribunal (AFT)",
+      "Cheque Bouncing (Sec 138 NI Act)",
+      "Family & Matrimonial Disputes",
+      "MACT Compensation Claims",
+      "Commercial Arbitration & Agreements"
     ],
-    languages: ["English", "Hindi"],
-    bio: "Sumeet Gupta is an energetic new advocate in his 1st year of legal practice, bringing modern legal research methods, fresh tactical perspectives, and digital-first case preparation to Bhagwati Prasad & Associates under the mentorship of Girish Kumar Gupta.",
+    languages: ["English", "Assamese", "Hindi"],
+    bio: "Advocate Sumeet Gupta is the Sole Proprietor of Bhagawati Legal Consultants & Advocates. Carrying forward the esteemed legal heritage of his grandfather, Late Advocate Bhagawati Prasad (who practiced in District Court Nagaon), and his father Advocate Girish Kumar Gupta (practicing advocate in Guwahati High Court). He has successfully tackled cases on Service matters and Bail matters in Guwahati High Court, as well as matters in the Debt Recovery Tribunal (DRT), Armed Forces Tribunal (AFT), Family Court, Cheque bouncing under Sec 138, and criminal cases in the CJM Court & District & Sessions Court Guwahati. In addition, the firm handles MACT cases and miscellaneous matters like Land Registration, Marriage Registration, Succession and Next of kin Certificates, Arbitration Matters, and Drafting of agreements.",
     achievements: [
-      "1 Year of dedicated advocacy and legal research excellence",
-      "Assisted in major commercial contract draftings and corporate compliance cases",
-      "Special interest in cyber security law, financial fraud defense, and IP protection",
-      "Tech-savvy advocate driving modern legal research tools"
+      "Sole Proprietor heading Bhagawati Legal Consultants & Advocates",
+      "Successful representation in Service and Bail petitions before Guwahati High Court",
+      "Active litigation before DRT, Armed Forces Tribunal (AFT), and Family Court",
+      "Advisory and documentation for Land, Marriage, Succession, and Commercial Agreements"
     ],
-    quote: "Modern litigation requires equal parts courtroom firepower, tactical foresight, and technological fluency.",
-    phone: "+91 98711 54321",
-    email: "sumeet.gupta@bhagwatiprasadlaw.com"
+    quote: "Every legal matter deserves relentless statutory preparation, courtroom precision, and an honest commitment to safeguarding the client's rights.",
+    phone: "+91 70020 69417",
+    email: "advocatesumeetg@gmail.com"
+  },
+  {
+    id: "girish-gupta",
+    name: "Advocate Girish Kumar Gupta",
+    role: "Senior Advocate & Counsel",
+    experience: "Senior Practicing Advocate | Guwahati High Court",
+    image: "/girish-gupta.jpg",
+    education: [
+      "Master of Laws (LL.M)",
+      "Bachelor of Laws (LL.B)",
+      "Senior Member - Guwahati High Court Bar Association"
+    ],
+    barEnrollment: "Guwahati High Court Bar Association",
+    courts: [
+      "Guwahati High Court",
+      "District & Sessions Courts of Assam",
+      "Appellate Tribunals"
+    ],
+    specialties: [
+      "Appellate Civil & Criminal Litigation",
+      "Constitutional & High Court Writs",
+      "Commercial & Land Disputes",
+      "Strategic Legal Advisory & Arbitration"
+    ],
+    languages: ["English", "Assamese", "Hindi"],
+    bio: "Advocate Girish Kumar Gupta is a senior practicing advocate in the Guwahati High Court with a Master of Laws (LL.M). Son of Late Advocate Bhagawati Prasad (who practiced in District Court Nagaon) and father of Advocate Sumeet Gupta, he brings decades of courtroom wisdom, statutory mastery, and appellate litigation experience to the practice.",
+    achievements: [
+      "Decades of seasoned legal practice before the Guwahati High Court",
+      "Master of Laws (LL.M) with deep jurisprudential authority",
+      "Extensive record across complex civil, criminal, and constitutional appellate matters",
+      "Guiding senior counsel for Bhagawati Legal Consultants & Advocates"
+    ],
+    quote: "The cornerstone of justice lies in the uncompromising fidelity to statutory law and unwavering advocacy for truth.",
+    phone: "+91 70020 69417",
+    email: "mrgkgupta@gmail.com"
   }
 ];
 
 export const practiceAreas: PracticeArea[] = [
   {
-    id: "matrimonial-divorce",
-    title: "Divorce & Family Court Litigation",
-    description: "Expert representation in mutual & contested divorces, child custody, alimony, restitution of conjugal rights, and family court proceedings.",
-    icon: "HeartHandshake",
-    subCategories: ["Mutual & Contested Divorce", "Child Custody & Maintenance", "Family Settlement & Alimony", "Domestic Violence Protection"],
-    leadAttorney: "Girish Kumar Gupta"
-  },
-  {
-    id: "cheque-bounce-138",
-    title: "Cheque Bounce (Sec 138 NI Act) & Recovery",
-    description: "Specialized advocacy for financial recovery under Section 138 of the Negotiable Instruments Act, legal notice serving, and trial defense.",
-    icon: "Landmark",
-    subCategories: ["Section 138 NI Act Notices", "Summary Suits & Commercial Recovery", "Execution of Money Decrees", "Bank Debt Settlement"],
-    leadAttorney: "Girish Kumar Gupta"
-  },
-  {
-    id: "aft-service-law",
-    title: "Armed Forces Tribunal (AFT) & Service Law",
-    description: "Dedicated legal representation before the Armed Forces Tribunal (AFT) for defense personnel pensions, promotions, court martial appeals, and service grievances.",
+    id: "service-matters-high-court",
+    title: "Service Matters (Guwahati High Court)",
+    description: "Legal representation in government and public sector service disputes, promotion appeals, termination challenges, pension withholdings, and administrative writ petitions.",
     icon: "Scale",
-    subCategories: ["AFT Pension & Disability Appeals", "Court Martial Defense", "Government Service & Administrative Writs", "Promotion & Discharge Writs"],
-    leadAttorney: "Girish Kumar Gupta"
+    subCategories: ["High Court Service Writs", "Seniority & Promotion Appeals", "Disciplinary Proceedings Defense", "Pension & Arrears Claims"],
+    leadAttorney: "Advocate Sumeet Gupta & Adv. Girish Kumar Gupta"
   },
   {
-    id: "criminal-bail",
-    title: "Criminal Defense & Bail Proceedings",
-    description: "Robust defense strategies for anticipatory & regular bail, criminal trial representation, quashing of FIRs under Sec 482, and white-collar defense.",
+    id: "bail-criminal-defense",
+    title: "Bail Matters & Criminal Defense",
+    description: "Anticipatory bail and regular bail proceedings before the Guwahati High Court, CJM Court, and District & Sessions Court Guwahati, with FIR quashing and defense advocacy.",
     icon: "ShieldAlert",
-    subCategories: ["Anticipatory & Regular Bail", "Quashing of FIR / Chargesheets", "Economic Offenses (EOW / PMLA)", "Trial & Cross Examination"],
-    leadAttorney: "Sumeet Gupta"
+    subCategories: ["Anticipatory Bail (High Court & Sessions)", "Regular Bail Applications", "CJM Court Trial Representation", "FIR & Chargesheet Defense"],
+    leadAttorney: "Advocate Sumeet Gupta"
   },
   {
-    id: "corporate-contracts",
-    title: "Commercial Contracts & Agreements",
-    description: "Comprehensive advisory on breach of contract, commercial agreement drafting, shareholder disputes, NCLT proceedings, and business negotiations.",
-    icon: "Briefcase",
-    subCategories: ["Commercial Contract Drafting", "Breach of Contract Injunctions", "NCLT Insolvency Proceedings", "M&A Due Diligence"],
-    leadAttorney: "Girish Kumar Gupta"
-  },
-  {
-    id: "drt-banking",
+    id: "drt-debt-recovery",
     title: "Debt Recovery Tribunal (DRT) & SARFAESI",
-    description: "Defending borrowers and financial institutions before Debt Recovery Tribunals (DRT), SARFAESI possession notices, and bank recovery proceedings.",
-    icon: "Building2",
-    subCategories: ["DRT Stay Applications", "SARFAESI Counter-Measures", "One-Time Settlement (OTS) Negotiations", "Bank Recovery Defense"],
-    leadAttorney: "Girish Kumar Gupta"
+    description: "Defending borrowers and handling financial disputes before the Debt Recovery Tribunal (DRT), SARFAESI stay petitions, and structured debt resolution.",
+    icon: "Landmark",
+    subCategories: ["DRT Stay Applications", "SARFAESI Counter-Measures", "Bank Recovery Defenses", "OTS Settlement Negotiation"],
+    leadAttorney: "Advocate Sumeet Gupta"
   },
   {
-    id: "arbitration-adr",
-    title: "Commercial Arbitration & Mediation",
-    description: "Domestic and international commercial arbitration advocacy under the Arbitration and Conciliation Act, including Section 9 & Section 11 applications.",
+    id: "aft-defense-service",
+    title: "Armed Forces Tribunal (AFT)",
+    description: "Dedicated advocacy before the Armed Forces Tribunal (AFT) for military personnel and defense veterans regarding disability pensions, promotions, and service grievances.",
     icon: "Gavel",
-    subCategories: ["Section 9 Interim Injunctions", "Section 11 Arbitrator Appointment", "Enforcement of Arbitral Awards", "Structured Mediation"],
-    leadAttorney: "Sumeet Gupta"
+    subCategories: ["AFT Disability Pension Appeals", "Armed Forces Service Grievances", "Court Martial Appeals", "Post-Retirement Arrears"],
+    leadAttorney: "Advocate Sumeet Gupta"
   },
   {
-    id: "cyber-ip",
-    title: "Cyber Law & Intellectual Property",
-    description: "Protecting digital assets, defending against cyber fraud charges, filing trademark & copyright infringement suits, and handling IT Act violations.",
+    id: "family-court-matrimonial",
+    title: "Family Court & Matrimonial Matters",
+    description: "Sensitive and robust legal representation in mutual and contested divorce proceedings, child custody, maintenance petitions, and restitution of conjugal rights in Family Court.",
+    icon: "HeartHandshake",
+    subCategories: ["Mutual & Contested Divorce", "Child Custody & Guardianship", "Maintenance & Alimony Claims", "Family Settlement Deeds"],
+    leadAttorney: "Advocate Sumeet Gupta"
+  },
+  {
+    id: "cheque-bouncing-138",
+    title: "Cheque Bouncing (Sec 138 NI Act)",
+    description: "Swift legal action and defense under Section 138 of the Negotiable Instruments Act, including drafting statutory legal notices, filing complaints, and trial advocacy.",
+    icon: "Briefcase",
+    subCategories: ["Section 138 NI Act Statutory Notices", "Complaint Filing & Prosecution", "Trial Defense & Settlement", "Financial Recovery Decrees"],
+    leadAttorney: "Advocate Sumeet Gupta"
+  },
+  {
+    id: "mact-claims",
+    title: "Motor Accident Claims (MACT)",
+    description: "Dedicated representation before the Motor Accident Claims Tribunal (MACT) for accident victims and families to secure fair, statutory compensation awards.",
+    icon: "Building2",
+    subCategories: ["MACT Claim Petition Filing", "Third-Party Insurance Claims", "Fatal & Severe Injury Compensation", "Appeals against Award Inadequacy"],
+    leadAttorney: "Advocate Sumeet Gupta"
+  },
+  {
+    id: "arbitration-agreements",
+    title: "Arbitration & Agreement Drafting",
+    description: "Comprehensive commercial arbitration representation and meticulous drafting of business contracts, commercial agreements, partnership deeds, and NDAs.",
     icon: "Lock",
-    subCategories: ["Trademark & Copyright Litigation", "Cyber Fraud & Identity Theft Defense", "Data Privacy Compliance", "Domain Name Disputes"],
-    leadAttorney: "Sumeet Gupta"
+    subCategories: ["Commercial Arbitration Proceedings", "Contract & Agreement Drafting", "Partnership & Joint Venture Deeds", "Legal Notice Drafting"],
+    leadAttorney: "Advocate Sumeet Gupta"
+  },
+  {
+    id: "land-marriage-registration",
+    title: "Land & Marriage Registration",
+    description: "Assistance with land title verifications, deed executions, land registrations, and legal solemnization and registration of marriages under applicable marriage acts.",
+    icon: "CheckCircle2",
+    subCategories: ["Land Title Search & Verification", "Sale Deed Execution & Registration", "Court Marriage Registration", "Special Marriage Act Formalities"],
+    leadAttorney: "Advocate Sumeet Gupta"
+  },
+  {
+    id: "succession-next-of-kin",
+    title: "Succession & Next of Kin Certificates",
+    description: "Legal documentation and court petitions for Succession Certificates, Next of Kin Certificates, Legal Heirship, and probate of wills across Assam courts.",
+    icon: "Building2",
+    subCategories: ["Succession Certificate Petitions", "Next of Kin / Legal Heir Certificates", "Probate of Wills & Letters of Admin", "Asset Inheritance Formalities"],
+    leadAttorney: "Advocate Sumeet Gupta"
   }
 ];
 
 export const caseResults: CaseResult[] = [
   {
     id: "case-1",
-    title: "High Court Cheque Bounce Sec 138 Precedent Victory",
-    category: "Financial Recovery",
-    court: "High Court",
-    outcome: "Full Recovery Decree & Conviction Upheld",
-    summary: "Successfully secured a full recovery decree of ₹1.2 Crores along with legal interest for a commercial supplier under Section 138 NI Act.",
-    year: "2024"
+    title: "Guwahati High Court Service Matter Writ",
+    category: "Service Law",
+    court: "Guwahati High Court",
+    outcome: "Relief & Service Rights Upheld",
+    summary: "Successfully secured favorable directions from the Guwahati High Court protecting employee service seniority and legitimate entitlement benefits.",
+    year: "Guwahati H.C."
   },
   {
     id: "case-2",
-    title: "Armed Forces Tribunal (AFT) Disability Pension Relief",
-    category: "AFT Service Law",
-    court: "Armed Forces Tribunal",
-    outcome: "Disability Pension Restored with Arrears",
-    summary: "Obtained a milestone order granting full disability pension and retrospective arrears for a retired defense officer.",
-    year: "2023"
+    title: "Urgent High Court & Sessions Bail Motions",
+    category: "Criminal Defense",
+    court: "Guwahati High Court & Sessions Court",
+    outcome: "Anticipatory & Regular Bail Secured",
+    summary: "Successfully argued critical anticipatory bail and regular bail applications, shielding clients from unlawful custody and procedural overreach.",
+    year: "Assam Courts"
   },
   {
     id: "case-3",
-    title: "Family Court Matrimonial & Custody Settlement",
-    category: "Family & Matrimonial",
-    court: "Family Court",
-    outcome: "Amicable Custody & Settlement Secured",
-    summary: "Resolved a complex 6-year matrimonial dispute with complete joint custody rights and equitable property division.",
-    year: "2024"
+    title: "Debt Recovery Tribunal (DRT) Defense",
+    category: "DRT Banking",
+    court: "Debt Recovery Tribunal (DRT)",
+    outcome: "Stay Granted & Restructured Resolution",
+    summary: "Appeared before the Debt Recovery Tribunal to defend commercial borrowers against harsh recovery actions and obtained vital interim protections.",
+    year: "DRT"
   },
   {
     id: "case-4",
-    title: "Anticipatory Bail & Discharge in Economic Offense",
-    category: "Criminal Defense",
-    court: "High Court / Sessions Court",
-    outcome: "Interim Bail Protection Granted",
-    summary: "Secured immediate anticipatory bail protection for a corporate director falsely implicated in a commercial fraud allegation.",
-    year: "2023"
+    title: "Armed Forces Tribunal (AFT) Pension Relief",
+    category: "Defense Service",
+    court: "Armed Forces Tribunal (AFT)",
+    outcome: "Pension Grievance Resolved Favorably",
+    summary: "Represented defense personnel before the Armed Forces Tribunal, achieving restoration of rightful pension entitlements and service recognition.",
+    year: "AFT"
   },
   {
     id: "case-5",
-    title: "DRT Stay Order Against Bank SARFAESI Auction",
-    category: "DRT Banking",
-    court: "Debt Recovery Tribunal (DRT)",
-    outcome: "Auction Stayed & OTS Approved",
-    summary: "Halted an imminent property auction by a nationalized bank and facilitated a favorable One-Time Settlement (OTS) for the client.",
-    year: "2024"
+    title: "Cheque Bouncing Sec 138 NI Act Recovery",
+    category: "Commercial Recovery",
+    court: "CJM & Judicial Magistrate Courts",
+    outcome: "Full Recovery & Decree Secured",
+    summary: "Successfully prosecuted negotiable instrument default proceedings under Section 138 NI Act, securing full recovery of dues for the client.",
+    year: "CJM Court"
+  },
+  {
+    id: "case-6",
+    title: "Family Court Matrimonial & Custody Settlement",
+    category: "Family Law",
+    court: "Family Court Guwahati",
+    outcome: "Amicable Resolution & Protection Granted",
+    summary: "Handled complex family court proceedings with legal sensitivity, achieving an equitable settlement and safeguarding client welfare.",
+    year: "Family Court"
   }
 ];
 
-export const testimonials: Testimonial[] = [
-  {
-    id: "test-1",
-    clientName: "Pranab Kumar Das",
-    clientTitle: "Business Enterprise Owner",
-    rating: 5,
-    text: "Advocate Girish Kumar Gupta Sir handled our cheque bounce recovery cases with absolute legal brilliance. His LL.M depth, 8 years of courtroom practice, and clear communication in Assamese & English achieved complete recovery.",
-    caseType: "Sec 138 NI Act Recovery"
-  },
-  {
-    id: "test-2",
-    clientName: "Subhedar Major (Retd.) R. K. Baruah",
-    clientTitle: "Armed Forces Veteran",
-    rating: 5,
-    text: "When my pension benefits were delayed, Girish Sir represented my case at the Armed Forces Tribunal. His vast legal knowledge and compassionate advocacy got my pension restored with full back-pay.",
-    caseType: "AFT Service Petition"
-  },
-  {
-    id: "test-3",
-    clientName: "Meenakshi & Aniket Roy",
-    clientTitle: "Corporate Professional",
-    rating: 5,
-    text: "Girish Gupta Sir guided us through a stressful family court matter with utmost sensitivity and professional strength. Highly respected advocate who genuinely cares for his clients.",
-    caseType: "Family Court Representation"
-  },
-  {
-    id: "test-4",
-    clientName: "Vikramaditya Oberoi",
-    clientTitle: "Tech Entrepreneur & Founder",
-    rating: 5,
-    text: "Sumeet Gupta is an enthusiastic associate lawyer. He assisted our startup through cyber compliance and helped defend us against a frivolous IP lawsuit. Energetic and dedicated.",
-    caseType: "Cyber & IP Advisory"
-  }
-];
+export const testimonials: Testimonial[] = [];
 
-export const faqs: FAQ[] = [
-  {
-    question: "How do I schedule a consultation with Advocate Girish Kumar Gupta?",
-    answer: "You can book directly using our online booking form on this website, call our desk at +91 98100 12345, or email girish.gupta@bhagwatiprasadlaw.com. We offer phone consultations, video calls, and chamber appointments.",
-    category: "Consultation"
-  },
-  {
-    question: "In which languages can I discuss my legal matter?",
-    answer: "Advocate Girish Kumar Gupta is fluent in English, Assamese, Hindi, and Bengali, ensuring clear, comfortable communication for clients across diverse regions.",
-    category: "Languages"
-  },
-  {
-    question: "What courts and tribunals does Advocate Girish Kumar Gupta practice in?",
-    answer: "Advocate Girish Kumar Gupta regularly appears in the High Court, District & Sessions Courts, Family Courts, Armed Forces Tribunal (AFT), and Debt Recovery Tribunal (DRT).",
-    category: "Courts"
-  },
-  {
-    question: "What documents are required for a Cheque Bounce (Sec 138 NI Act) case?",
-    answer: "Please bring the original bounced cheque, bank return memo, copy of the legal notice sent, courier/speed post tracking receipt, and invoice/agreement establishing legal debt liability.",
-    category: "Documentation"
-  },
-  {
-    question: "Do you handle urgent criminal bail applications?",
-    answer: "Yes, for urgent anticipatory bail, regular bail applications, or emergency High Court stay motions, our emergency desk is available at +91 99990 88776.",
-    category: "Emergency"
-  }
-];
+export const faqs: FAQ[] = [];

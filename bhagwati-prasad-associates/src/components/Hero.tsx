@@ -68,16 +68,16 @@ export default function Hero({ onOpenBooking }: HeroProps) {
           {/* Key Practice Badges */}
           <div className="pt-4 flex flex-wrap justify-center gap-3 text-xs font-medium text-slate-700 dark:text-slate-300">
             <span className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 shadow-sm">
-              <CheckCircle2 className="w-3.5 h-3.5 text-amber-600 dark:text-gold-400" /> Supreme Court & High Court Writs
+              <CheckCircle2 className="w-3.5 h-3.5 text-amber-600 dark:text-gold-400" /> Guwahati High Court Service & Bail Matters
             </span>
             <span className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 shadow-sm">
-              <CheckCircle2 className="w-3.5 h-3.5 text-amber-600 dark:text-gold-400" /> Property Partition & Title Suits
+              <CheckCircle2 className="w-3.5 h-3.5 text-amber-600 dark:text-gold-400" /> Debt Recovery Tribunal (DRT) & AFT
             </span>
             <span className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 shadow-sm">
-              <CheckCircle2 className="w-3.5 h-3.5 text-amber-600 dark:text-gold-400" /> Urgent Criminal Bail & FIR Defense
+              <CheckCircle2 className="w-3.5 h-3.5 text-amber-600 dark:text-gold-400" /> Family Court & Cheque Bouncing (Sec 138)
             </span>
             <span className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 shadow-sm">
-              <CheckCircle2 className="w-3.5 h-3.5 text-amber-600 dark:text-gold-400" /> Commercial Arbitration & NCLT
+              <CheckCircle2 className="w-3.5 h-3.5 text-amber-600 dark:text-gold-400" /> MACT, CJM Court & All Courts of Assam
             </span>
           </div>
 
