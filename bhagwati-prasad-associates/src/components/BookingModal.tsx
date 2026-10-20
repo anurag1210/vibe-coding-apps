@@ -17,8 +17,13 @@ export default function BookingModal({
   initialAttorney,
   initialPracticeArea,
 }: BookingModalProps) {
+  const orderedAttorneys = [
+    attorneys.find((a) => a.id === "girish-gupta") || attorneys[1],
+    attorneys.find((a) => a.id === "sumeet-gupta") || attorneys[0],
+  ].filter(Boolean) as typeof attorneys;
+
   const [step, setStep] = useState<1 | 2 | 3 | 4>(1);
-  const [selectedAttorney, setSelectedAttorney] = useState<string>(initialAttorney || "Advocate Sumeet Gupta");
+  const [selectedAttorney, setSelectedAttorney] = useState<string>(initialAttorney || "Advocate Girish Kumar Gupta");
   const [selectedArea, setSelectedArea] = useState<string>(initialPracticeArea || practiceAreas[0].title);
   const consultType = "chamber";
   const [date, setDate] = useState<string>("2026-09-25");
@@ -88,65 +93,75 @@ export default function BookingModal({
           </button>
         </div>
 
-        {/* Instant Contact Ribbon with Both Advocates */}
+        {/* Instant Contact Ribbon with Both Advocates (Stacked by Seniority) */}
         <div className="p-3.5 sm:p-4 rounded-2xl bg-amber-500/10 border border-amber-500/30 space-y-2.5 text-xs">
           <div className="flex items-center gap-2 text-amber-900 dark:text-gold-300 font-bold uppercase tracking-wider text-[11px]">
             <Phone className="w-3.5 h-3.5 text-amber-600 dark:text-gold-400 shrink-0" />
             <span>Direct Chamber Desks</span>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
-            {/* Advocate Sumeet Gupta */}
-            <div className="flex flex-col sm:flex-row sm:items-center justify-between p-2.5 rounded-xl bg-white/80 dark:bg-slate-950/80 border border-amber-500/20 shadow-sm gap-2">
+          <div className="flex flex-col gap-2.5">
+            {/* 1. Advocate Girish Kumar Gupta (Senior) */}
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between p-3 rounded-xl bg-white/80 dark:bg-slate-950/80 border border-amber-500/20 shadow-sm gap-2">
               <div className="min-w-0">
-                <p className="font-bold text-slate-900 dark:text-white text-xs truncate">Advocate Sumeet Gupta</p>
-                <p className="text-[11px] text-amber-800 dark:text-gold-400 font-mono font-medium">+91 70020 69417</p>
+                <div className="flex items-center gap-2 flex-wrap">
+                  <p className="font-bold text-slate-900 dark:text-white text-sm">Advocate Girish Kumar Gupta</p>
+                  <span className="text-[10px] font-semibold text-amber-800 bg-amber-100 dark:text-gold-400 dark:bg-gold-500/10 px-2 py-0.5 rounded-full border border-amber-200 dark:border-gold-500/20">
+                    Senior Advocate & Counsel
+                  </span>
+                </div>
+                <p className="text-xs text-amber-800 dark:text-gold-400 font-mono font-medium pt-0.5">+91 70028 68428</p>
               </div>
-              <div className="flex items-center gap-1.5 shrink-0">
-                <a
-                  href="tel:+917002069417"
-                  className="px-2.5 py-1 rounded-lg bg-amber-500 hover:bg-amber-600 dark:bg-gold-500 dark:hover:bg-gold-400 text-slate-950 font-bold font-mono text-[11px] flex items-center gap-1 transition-colors shadow-sm"
-                  title="Call Advocate Sumeet Gupta"
-                >
-                  <Phone className="w-3 h-3" />
-                  <span>Call</span>
-                </a>
-                <a
-                  href="https://wa.me/917002069417?text=Hello%20Advocate%20Sumeet%20Gupta,%20I%20would%20like%20to%20schedule%20a%20legal%20consultation."
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="px-2.5 py-1 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-[11px] flex items-center gap-1 transition-colors shadow-sm"
-                  title="WhatsApp Advocate Sumeet Gupta"
-                >
-                  <MessageSquare className="w-3 h-3" />
-                  <span>WhatsApp</span>
-                </a>
-              </div>
-            </div>
-
-            {/* Advocate Girish Kumar Gupta */}
-            <div className="flex flex-col sm:flex-row sm:items-center justify-between p-2.5 rounded-xl bg-white/80 dark:bg-slate-950/80 border border-amber-500/20 shadow-sm gap-2">
-              <div className="min-w-0">
-                <p className="font-bold text-slate-900 dark:text-white text-xs truncate">Advocate Girish Kumar Gupta</p>
-                <p className="text-[11px] text-amber-800 dark:text-gold-400 font-mono font-medium">+91 70028 68428</p>
-              </div>
-              <div className="flex items-center gap-1.5 shrink-0">
+              <div className="flex items-center gap-2 shrink-0">
                 <a
                   href="tel:+917002868428"
-                  className="px-2.5 py-1 rounded-lg bg-amber-500 hover:bg-amber-600 dark:bg-gold-500 dark:hover:bg-gold-400 text-slate-950 font-bold font-mono text-[11px] flex items-center gap-1 transition-colors shadow-sm"
+                  className="px-3 py-1.5 rounded-lg bg-amber-500 hover:bg-amber-600 dark:bg-gold-500 dark:hover:bg-gold-400 text-slate-950 font-bold font-mono text-xs flex items-center gap-1.5 transition-colors shadow-sm"
                   title="Call Advocate Girish Kumar Gupta"
                 >
-                  <Phone className="w-3 h-3" />
+                  <Phone className="w-3.5 h-3.5" />
                   <span>Call</span>
                 </a>
                 <a
                   href="https://wa.me/917002868428?text=Hello%20Advocate%20Girish%20Kumar%20Gupta,%20I%20would%20like%20to%20schedule%20a%20legal%20consultation."
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-2.5 py-1 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-[11px] flex items-center gap-1 transition-colors shadow-sm"
+                  className="px-3 py-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs flex items-center gap-1.5 transition-colors shadow-sm"
                   title="WhatsApp Advocate Girish Kumar Gupta"
                 >
-                  <MessageSquare className="w-3 h-3" />
+                  <MessageSquare className="w-3.5 h-3.5" />
+                  <span>WhatsApp</span>
+                </a>
+              </div>
+            </div>
+
+            {/* 2. Advocate Sumeet Gupta */}
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between p-3 rounded-xl bg-white/80 dark:bg-slate-950/80 border border-amber-500/20 shadow-sm gap-2">
+              <div className="min-w-0">
+                <div className="flex items-center gap-2 flex-wrap">
+                  <p className="font-bold text-slate-900 dark:text-white text-sm">Advocate Sumeet Gupta</p>
+                  <span className="text-[10px] font-semibold text-amber-800 bg-amber-100 dark:text-gold-400 dark:bg-gold-500/10 px-2 py-0.5 rounded-full border border-amber-200 dark:border-gold-500/20">
+                    Sole Proprietor & Practicing Advocate
+                  </span>
+                </div>
+                <p className="text-xs text-amber-800 dark:text-gold-400 font-mono font-medium pt-0.5">+91 70020 69417</p>
+              </div>
+              <div className="flex items-center gap-2 shrink-0">
+                <a
+                  href="tel:+917002069417"
+                  className="px-3 py-1.5 rounded-lg bg-amber-500 hover:bg-amber-600 dark:bg-gold-500 dark:hover:bg-gold-400 text-slate-950 font-bold font-mono text-xs flex items-center gap-1.5 transition-colors shadow-sm"
+                  title="Call Advocate Sumeet Gupta"
+                >
+                  <Phone className="w-3.5 h-3.5" />
+                  <span>Call</span>
+                </a>
+                <a
+                  href="https://wa.me/917002069417?text=Hello%20Advocate%20Sumeet%20Gupta,%20I%20would%20like%20to%20schedule%20a%20legal%20consultation."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-3 py-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs flex items-center gap-1.5 transition-colors shadow-sm"
+                  title="WhatsApp Advocate Sumeet Gupta"
+                >
+                  <MessageSquare className="w-3.5 h-3.5" />
                   <span>WhatsApp</span>
                 </a>
               </div>
@@ -172,7 +187,7 @@ export default function BookingModal({
             </div>
             
             <div className="grid grid-cols-1 gap-3">
-              {attorneys.map((attorney) => {
+              {orderedAttorneys.map((attorney) => {
                 const isSelected = selectedAttorney === attorney.name;
                 return (
                   <div
@@ -230,7 +245,6 @@ export default function BookingModal({
             </div>
           </div>
         )}
-
         {/* Step 2: Practice Area Selection */}
         {step === 2 && (
           <div className="space-y-4 animate-in fade-in">
