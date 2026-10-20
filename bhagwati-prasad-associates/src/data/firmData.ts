@@ -107,7 +107,7 @@ export const attorneys: Attorney[] = [
       "MACT Compensation Claims",
       "Commercial Arbitration & Agreements"
     ],
-    languages: ["English", "Assamese", "Hindi"],
+    languages: ["English", "Assamese", "Hindi", "Bengali"],
     bio: "Advocate Sumeet Gupta is the Sole Proprietor of Bhagawati Legal Consultants & Advocates. Carrying forward the esteemed legal heritage of his grandfather, Late Advocate Bhagawati Prasad (who practiced in District Court Nagaon), and his father Advocate Girish Kumar Gupta (practicing advocate in Gauhati High Court). He has successfully tackled cases on Service matters and Bail matters in Gauhati High Court, as well as matters in the Debt Recovery Tribunal (DRT), Armed Forces Tribunal (AFT), Family Court, Cheque bouncing under Sec 138, and criminal cases in the CJM Court & District & Sessions Court Gauhati. In addition, the firm handles MACT cases and miscellaneous matters like Land Registration, Marriage Registration, Succession and Next of kin Certificates, Arbitration Matters, and Drafting of agreements.",
     achievements: [
       "Sole Proprietor heading Bhagawati Legal Consultants & Advocates",
@@ -142,7 +142,7 @@ export const attorneys: Attorney[] = [
       "Commercial & Land Disputes",
       "Strategic Legal Advisory & Arbitration"
     ],
-    languages: ["English", "Assamese", "Hindi"],
+    languages: ["English", "Assamese", "Hindi", "Bengali"],
     bio: "Advocate Girish Kumar Gupta is a senior practicing advocate in the Gauhati High Court with a Master of Laws (LL.M). Son of Late Advocate Bhagawati Prasad (who practiced in District Court Nagaon) and father of Advocate Sumeet Gupta, he brings decades of courtroom wisdom, statutory mastery, and appellate litigation experience to the practice.",
     achievements: [
       "Decades of seasoned legal practice before the Gauhati High Court",
