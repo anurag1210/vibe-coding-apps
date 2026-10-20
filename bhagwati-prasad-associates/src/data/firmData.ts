@@ -54,18 +54,18 @@ export const firmInfo = {
   name: "Bhagawati Legal Consultants & Advocates",
   shortName: "Bhagawati Legal",
   legacy: "Carrying forward the legal heritage of Late Advocate Bhagawati Prasad (District Court Nagaon)",
-  tagline: "Guwahati High Court & Appellate Legal Advocacy",
-  heroSubtitle: "A sole proprietary concern of Advocate Sumeet Gupta, carrying forward the legal heritage of Late Bhagawati Prasad (District Court Nagaon) and Senior Advocate Girish Kumar Gupta (Guwahati High Court). Comprehensive legal representation across Guwahati High Court, DRT, AFT, Family Court, CJM Court, and District & Sessions Courts of Assam.",
+  tagline: "Gauhati High Court & Appellate Legal Advocacy",
+  heroSubtitle: "A sole proprietary concern of Advocate Sumeet Gupta, carrying forward the legal heritage of Late Bhagawati Prasad (District Court Nagaon) and Senior Advocate Girish Kumar Gupta (Gauhati High Court). Comprehensive legal representation across Gauhati High Court, DRT, AFT, Family Court, CJM Court, and District & Sessions Courts of Assam.",
   stats: [
     { label: "Generations of Legal Heritage", value: "3" },
-    { label: "Jurisdiction & Reach", value: "Guwahati High Court & Assam" },
+    { label: "Jurisdiction & Reach", value: "Gauhati High Court & Assam" },
     { label: "Tribunals & Forums", value: "DRT, AFT, Family, MACT & CJM" },
     { label: "Consultation Mode", value: "By Appointment" },
   ],
   contact: {
-    address: "18, Santipath, 3rd Bye Lane, Mathuranagar, P.O. Assam Sachivalaya, Guwahati - 781006",
+    address: "18, Santipath, 3rd Bye Lane, Mathuranagar, P.O. Assam Sachivalaya, Gauhati - 781006",
     landmark: "Backside of Down Town Hospital",
-    chamberCity: "Guwahati",
+    chamberCity: "Gauhati",
     phone: "+91 70020 69417",
     sumeetPhone: "+91 70020 69417",
     email: "advocatesumeetg@gmail.com",
@@ -80,24 +80,24 @@ export const attorneys: Attorney[] = [
     id: "sumeet-gupta",
     name: "Advocate Sumeet Gupta",
     role: "Sole Proprietor & Practicing Advocate",
-    experience: "Sole Proprietor | Guwahati High Court & Assam Courts",
+    experience: "Sole Proprietor | Gauhati High Court & Assam Courts",
     image: "/sumeet-gupta.png",
     education: [
       "B.A. LL.B (Honours)",
-      "Advocate - Guwahati High Court Bar Association",
+      "Advocate - Gauhati High Court Bar Association",
       "Specialized in Appellate Advocacy & Tribunal Litigation"
     ],
-    barEnrollment: "Guwahati High Court Bar Association",
+    barEnrollment: "Gauhati High Court Bar Association",
     courts: [
-      "Guwahati High Court",
+      "Gauhati High Court",
       "Debt Recovery Tribunal (DRT)",
       "Armed Forces Tribunal (AFT)",
-      "Family Court Guwahati",
-      "CJM Court & District & Sessions Court Guwahati",
+      "Family Court Gauhati",
+      "CJM Court & District & Sessions Court Gauhati",
       "Motor Accident Claims Tribunal (MACT)"
     ],
     specialties: [
-      "Service Matters (Guwahati High Court)",
+      "Service Matters (Gauhati High Court)",
       "Bail Matters & Criminal Defense",
       "Debt Recovery Tribunal (DRT)",
       "Armed Forces Tribunal (AFT)",
@@ -107,10 +107,10 @@ export const attorneys: Attorney[] = [
       "Commercial Arbitration & Agreements"
     ],
     languages: ["English", "Assamese", "Hindi"],
-    bio: "Advocate Sumeet Gupta is the Sole Proprietor of Bhagawati Legal Consultants & Advocates. Carrying forward the esteemed legal heritage of his grandfather, Late Advocate Bhagawati Prasad (who practiced in District Court Nagaon), and his father Advocate Girish Kumar Gupta (practicing advocate in Guwahati High Court). He has successfully tackled cases on Service matters and Bail matters in Guwahati High Court, as well as matters in the Debt Recovery Tribunal (DRT), Armed Forces Tribunal (AFT), Family Court, Cheque bouncing under Sec 138, and criminal cases in the CJM Court & District & Sessions Court Guwahati. In addition, the firm handles MACT cases and miscellaneous matters like Land Registration, Marriage Registration, Succession and Next of kin Certificates, Arbitration Matters, and Drafting of agreements.",
+    bio: "Advocate Sumeet Gupta is the Sole Proprietor of Bhagawati Legal Consultants & Advocates. Carrying forward the esteemed legal heritage of his grandfather, Late Advocate Bhagawati Prasad (who practiced in District Court Nagaon), and his father Advocate Girish Kumar Gupta (practicing advocate in Gauhati High Court). He has successfully tackled cases on Service matters and Bail matters in Gauhati High Court, as well as matters in the Debt Recovery Tribunal (DRT), Armed Forces Tribunal (AFT), Family Court, Cheque bouncing under Sec 138, and criminal cases in the CJM Court & District & Sessions Court Gauhati. In addition, the firm handles MACT cases and miscellaneous matters like Land Registration, Marriage Registration, Succession and Next of kin Certificates, Arbitration Matters, and Drafting of agreements.",
     achievements: [
       "Sole Proprietor heading Bhagawati Legal Consultants & Advocates",
-      "Successful representation in Service and Bail petitions before Guwahati High Court",
+      "Successful representation in Service and Bail petitions before Gauhati High Court",
       "Active litigation before DRT, Armed Forces Tribunal (AFT), and Family Court",
       "Advisory and documentation for Land, Marriage, Succession, and Commercial Agreements"
     ],
@@ -122,16 +122,16 @@ export const attorneys: Attorney[] = [
     id: "girish-gupta",
     name: "Advocate Girish Kumar Gupta",
     role: "Senior Advocate & Counsel",
-    experience: "Senior Practicing Advocate | Guwahati High Court",
+    experience: "Senior Practicing Advocate | Gauhati High Court",
     image: "/girish-gupta.jpg",
     education: [
       "Master of Laws (LL.M)",
       "Bachelor of Laws (LL.B)",
-      "Senior Member - Guwahati High Court Bar Association"
+      "Senior Member - Gauhati High Court Bar Association"
     ],
-    barEnrollment: "Guwahati High Court Bar Association",
+    barEnrollment: "Gauhati High Court Bar Association",
     courts: [
-      "Guwahati High Court",
+      "Gauhati High Court",
       "District & Sessions Courts of Assam",
       "Appellate Tribunals"
     ],
@@ -142,9 +142,9 @@ export const attorneys: Attorney[] = [
       "Strategic Legal Advisory & Arbitration"
     ],
     languages: ["English", "Assamese", "Hindi"],
-    bio: "Advocate Girish Kumar Gupta is a senior practicing advocate in the Guwahati High Court with a Master of Laws (LL.M). Son of Late Advocate Bhagawati Prasad (who practiced in District Court Nagaon) and father of Advocate Sumeet Gupta, he brings decades of courtroom wisdom, statutory mastery, and appellate litigation experience to the practice.",
+    bio: "Advocate Girish Kumar Gupta is a senior practicing advocate in the Gauhati High Court with a Master of Laws (LL.M). Son of Late Advocate Bhagawati Prasad (who practiced in District Court Nagaon) and father of Advocate Sumeet Gupta, he brings decades of courtroom wisdom, statutory mastery, and appellate litigation experience to the practice.",
     achievements: [
-      "Decades of seasoned legal practice before the Guwahati High Court",
+      "Decades of seasoned legal practice before the Gauhati High Court",
       "Master of Laws (LL.M) with deep jurisprudential authority",
       "Extensive record across complex civil, criminal, and constitutional appellate matters",
       "Guiding senior counsel for Bhagawati Legal Consultants & Advocates"
@@ -158,7 +158,7 @@ export const attorneys: Attorney[] = [
 export const practiceAreas: PracticeArea[] = [
   {
     id: "service-matters-high-court",
-    title: "Service Matters (Guwahati High Court)",
+    title: "Service Matters (Gauhati High Court)",
     description: "Legal representation in government and public sector service disputes, promotion appeals, termination challenges, pension withholdings, and administrative writ petitions.",
     icon: "Scale",
     subCategories: ["High Court Service Writs", "Seniority & Promotion Appeals", "Disciplinary Proceedings Defense", "Pension & Arrears Claims"],
@@ -167,7 +167,7 @@ export const practiceAreas: PracticeArea[] = [
   {
     id: "bail-criminal-defense",
     title: "Bail Matters & Criminal Defense",
-    description: "Anticipatory bail and regular bail proceedings before the Guwahati High Court, CJM Court, and District & Sessions Court Guwahati, with FIR quashing and defense advocacy.",
+    description: "Anticipatory bail and regular bail proceedings before the Gauhati High Court, CJM Court, and District & Sessions Court Gauhati, with FIR quashing and defense advocacy.",
     icon: "ShieldAlert",
     subCategories: ["Anticipatory Bail (High Court & Sessions)", "Regular Bail Applications", "CJM Court Trial Representation", "FIR & Chargesheet Defense"],
     leadAttorney: "Advocate Sumeet Gupta"
@@ -241,18 +241,18 @@ export const practiceAreas: PracticeArea[] = [
 export const caseResults: CaseResult[] = [
   {
     id: "case-1",
-    title: "Guwahati High Court Service Matter Writ",
+    title: "Gauhati High Court Service Matter Writ",
     category: "Service Law",
-    court: "Guwahati High Court",
+    court: "Gauhati High Court",
     outcome: "Relief & Service Rights Upheld",
-    summary: "Successfully secured favorable directions from the Guwahati High Court protecting employee service seniority and legitimate entitlement benefits.",
-    year: "Guwahati H.C."
+    summary: "Successfully secured favorable directions from the Gauhati High Court protecting employee service seniority and legitimate entitlement benefits.",
+    year: "Gauhati H.C."
   },
   {
     id: "case-2",
     title: "Urgent High Court & Sessions Bail Motions",
     category: "Criminal Defense",
-    court: "Guwahati High Court & Sessions Court",
+    court: "Gauhati High Court & Sessions Court",
     outcome: "Anticipatory & Regular Bail Secured",
     summary: "Successfully argued critical anticipatory bail and regular bail applications, shielding clients from unlawful custody and procedural overreach.",
     year: "Assam Courts"
@@ -288,7 +288,7 @@ export const caseResults: CaseResult[] = [
     id: "case-6",
     title: "Family Court Matrimonial & Custody Settlement",
     category: "Family Law",
-    court: "Family Court Guwahati",
+    court: "Family Court Gauhati",
     outcome: "Amicable Resolution & Protection Granted",
     summary: "Handled complex family court proceedings with legal sensitivity, achieving an equitable settlement and safeguarding client welfare.",
     year: "Family Court"

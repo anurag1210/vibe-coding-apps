@@ -125,14 +125,14 @@ export default function BookingModal({
                 </div>
               </div>
               <p className="text-xs text-slate-600 dark:text-slate-300 mt-3 leading-relaxed">
-                Guwahati High Court | DRT | AFT | Family Court | CJM & District Sessions Court | MACT
+                Gauhati High Court | DRT | AFT | Family Court | CJM & District Sessions Court | MACT
               </p>
             </div>
 
             {/* Consultation Mode: In-Person Only */}
             <div className="pt-2">
               <div className="p-3 rounded-xl border bg-amber-50 border-amber-300 dark:bg-slate-950 dark:border-gold-500/40 text-xs font-bold text-amber-900 dark:text-gold-300 flex items-center gap-2">
-                🏛️ In-Person Chamber Consultation — Guwahati
+                🏛️ In-Person Chamber Consultation — Gauhati
               </div>
             </div>
           </div>
@@ -252,7 +252,7 @@ export default function BookingModal({
             <div className="p-4 rounded-2xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 text-left text-xs space-y-2 max-w-md mx-auto font-mono">
               <p><span className="text-slate-500 dark:text-slate-400">Direct Contact:</span> <strong className="text-amber-800 dark:text-gold-300">+91 70020 69417 (Advocate Sumeet Gupta)</strong></p>
               <p><span className="text-slate-500 dark:text-slate-400">Email:</span> <strong className="text-slate-900 dark:text-white">advocatesumeetg@gmail.com / mrgkgupta@gmail.com</strong></p>
-              <p><span className="text-slate-500 dark:text-slate-400">Mode:</span> <strong className="text-slate-900 dark:text-white">{consultType === "chamber" ? "In-Person Guwahati Chamber" : "Secure Video Consult"}</strong></p>
+              <p><span className="text-slate-500 dark:text-slate-400">Mode:</span> <strong className="text-slate-900 dark:text-white">{consultType === "chamber" ? "In-Person Gauhati Chamber" : "Secure Video Consult"}</strong></p>
               <p><span className="text-slate-500 dark:text-slate-400">Date & Slot:</span> <strong className="text-amber-800 dark:text-gold-300">{date} at {time}</strong></p>
               <p><span className="text-slate-500 dark:text-slate-400">Chamber:</span> {firmInfo.contact.address} (Landmark: {firmInfo.contact.landmark})</p>
             </div>

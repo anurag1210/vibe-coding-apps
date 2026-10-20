@@ -22,7 +22,7 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-slate-400 leading-relaxed text-xs max-w-md">
-              {firmInfo.tagline}. A sole proprietary concern of Advocate Sumeet Gupta. Dedicated to courtroom advocacy across Guwahati High Court, DRT, AFT, CJM Court, and District Courts throughout Assam.
+              {firmInfo.tagline}. A sole proprietary concern of Advocate Sumeet Gupta. Dedicated to courtroom advocacy across Gauhati High Court, DRT, AFT, CJM Court, and District Courts throughout Assam.
             </p>
             <p className="text-[11px] text-gold-400 font-mono">
               {firmInfo.legacy}
@@ -88,7 +88,7 @@ export default function Footer() {
         <div className="pt-4 flex flex-col sm:flex-row items-center justify-between gap-4 text-slate-400 text-[11px]">
           <p>© {new Date().getFullYear()} {firmInfo.name}. All rights reserved.</p>
           <p className="flex items-center gap-1 text-slate-400">
-            Guwahati High Court & Courts of Assam Legal Advocacy
+            Gauhati High Court & Courts of Assam Legal Advocacy
           </p>
         </div>
 

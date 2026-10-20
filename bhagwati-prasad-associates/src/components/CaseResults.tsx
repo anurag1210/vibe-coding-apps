@@ -18,7 +18,7 @@ export default function CaseResults() {
             Key Forum Appearances & Case Matters
           </h2>
           <p className="text-slate-600 dark:text-slate-300 text-base sm:text-lg">
-            A proven track record successfully tackling Service and Bail matters in Guwahati High Court, DRT, Armed Forces Tribunal, and Assam Courts.
+            A proven track record successfully tackling Service and Bail matters in Gauhati High Court, DRT, Armed Forces Tribunal, and Assam Courts.
           </p>
         </div>
 

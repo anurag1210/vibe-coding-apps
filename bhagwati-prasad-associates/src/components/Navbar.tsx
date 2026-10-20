@@ -49,7 +49,7 @@ export default function Navbar({ onOpenBooking }: NavbarProps) {
               {firmInfo.name}
             </span>
             <span className="text-[10px] sm:text-xs uppercase tracking-widest text-amber-800 dark:text-gold-400/90 font-medium">
-              Guwahati High Court & District Courts of Assam
+              Gauhati High Court & District Courts of Assam
             </span>
           </div>
         </a>

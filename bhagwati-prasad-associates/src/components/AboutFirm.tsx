@@ -48,7 +48,7 @@ export default function AboutFirm() {
               </blockquote>
 
               <div className="pt-4 border-t border-slate-200 dark:border-slate-800 flex items-center justify-between text-xs text-slate-600 dark:text-slate-400">
-                <span className="flex items-center gap-1.5"><Shield className="w-4 h-4 text-amber-600 dark:text-gold-400" /> Guwahati High Court Bar</span>
+                <span className="flex items-center gap-1.5"><Shield className="w-4 h-4 text-amber-600 dark:text-gold-400" /> Gauhati High Court Bar</span>
                 <span className="flex items-center gap-1.5"><Users className="w-4 h-4 text-amber-600 dark:text-gold-400" /> 3 Generations of Legal Heritage</span>
               </div>
             </div>
@@ -88,10 +88,10 @@ export default function AboutFirm() {
                   Sole Proprietary Concern of Advocate Sumeet Gupta
                 </h3>
                 <p className="text-slate-600 dark:text-slate-300 leading-relaxed text-sm sm:text-base">
-                  The firm is a sole proprietory concern of <strong className="text-slate-900 dark:text-white">Advocate Sumeet Gupta</strong>, whose grandfather <strong className="text-slate-900 dark:text-white">Late Bhagawati Prasad</strong> practiced Law in District Court Nagaon and father is practicing advocate in <strong className="text-slate-900 dark:text-white">Guwahati High Court</strong>.
+                  The firm is a sole proprietory concern of <strong className="text-slate-900 dark:text-white">Advocate Sumeet Gupta</strong>, whose grandfather <strong className="text-slate-900 dark:text-white">Late Bhagawati Prasad</strong> practiced Law in District Court Nagaon and father is practicing advocate in <strong className="text-slate-900 dark:text-white">Gauhati High Court</strong>.
                 </p>
                 <p className="text-slate-600 dark:text-slate-300 leading-relaxed text-sm sm:text-base">
-                  He has successfully tackled cases on Service matters and Bail matters in Guwahati High Court; cases in the Debt Recovery Tribunal (DRT), Armed Forces Tribunal (AFT), Family Court, Cheque bouncing under Section 138, and criminal cases in the CJM Court & District & Sessions Court Guwahati.
+                  He has successfully tackled cases on Service matters and Bail matters in Gauhati High Court; cases in the Debt Recovery Tribunal (DRT), Armed Forces Tribunal (AFT), Family Court, Cheque bouncing under Section 138, and criminal cases in the CJM Court & District & Sessions Court Gauhati.
                 </p>
                 <p className="text-slate-600 dark:text-slate-300 leading-relaxed text-sm sm:text-base">
                   In addition, the firm handles MACT cases and miscellaneous matters including Land Registration, Marriage Registration, Succession and Next of kin Certificates, Arbitration Matters, and Drafting of commercial and personal agreements.
@@ -108,8 +108,8 @@ export default function AboutFirm() {
                   <div className="p-4 rounded-xl bg-slate-50 dark:bg-slate-950/60 border border-slate-200 dark:border-slate-800 flex items-start gap-3 shadow-sm">
                     <CheckCircle className="w-5 h-5 text-amber-600 dark:text-gold-400 shrink-0 mt-0.5" />
                     <div>
-                      <h4 className="font-semibold text-slate-900 dark:text-white text-sm">Guwahati High Court Guidance</h4>
-                      <p className="text-xs text-slate-600 dark:text-slate-400">Backed by senior counsel with decades of seasoned practice in the Guwahati High Court.</p>
+                      <h4 className="font-semibold text-slate-900 dark:text-white text-sm">Gauhati High Court Guidance</h4>
+                      <p className="text-xs text-slate-600 dark:text-slate-400">Backed by senior counsel with decades of seasoned practice in the Gauhati High Court.</p>
                     </div>
                   </div>
                 </div>
@@ -120,15 +120,15 @@ export default function AboutFirm() {
             {activeTab === "reach" && (
               <div className="space-y-4 animate-in fade-in duration-300">
                 <h3 className="font-serif text-2xl font-bold text-slate-900 dark:text-white">
-                  Guwahati High Court & All Courts of Assam
+                  Gauhati High Court & All Courts of Assam
                 </h3>
                 <p className="text-slate-600 dark:text-slate-300 leading-relaxed text-sm sm:text-base">
-                  Our practice represents clients extensively across the Guwahati High Court, District & Sessions Courts, and specialized statutory tribunals throughout Assam:
+                  Our practice represents clients extensively across the Gauhati High Court, District & Sessions Courts, and specialized statutory tribunals throughout Assam:
                 </p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 text-xs sm:text-sm font-medium">
                   <div className="p-3.5 rounded-xl bg-slate-50 dark:bg-slate-950/60 border border-slate-200 dark:border-slate-800 text-amber-900 dark:text-gold-300 flex items-center gap-2">
                     <span className="w-2 h-2 rounded-full bg-amber-500 dark:bg-gold-400" />
-                    Guwahati High Court (Principal Seat)
+                    Gauhati High Court (Principal Seat)
                   </div>
                   <div className="p-3.5 rounded-xl bg-slate-50 dark:bg-slate-950/60 border border-slate-200 dark:border-slate-800 text-amber-900 dark:text-gold-300 flex items-center gap-2">
                     <span className="w-2 h-2 rounded-full bg-amber-500 dark:bg-gold-400" />
@@ -136,7 +136,7 @@ export default function AboutFirm() {
                   </div>
                   <div className="p-3.5 rounded-xl bg-slate-50 dark:bg-slate-950/60 border border-slate-200 dark:border-slate-800 text-amber-900 dark:text-gold-300 flex items-center gap-2">
                     <span className="w-2 h-2 rounded-full bg-amber-500 dark:bg-gold-400" />
-                    CJM Court Guwahati
+                    CJM Court Gauhati
                   </div>
                   <div className="p-3.5 rounded-xl bg-slate-50 dark:bg-slate-950/60 border border-slate-200 dark:border-slate-800 text-amber-900 dark:text-gold-300 flex items-center gap-2">
                     <span className="w-2 h-2 rounded-full bg-amber-500 dark:bg-gold-400" />

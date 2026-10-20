@@ -64,7 +64,7 @@ export default function PracticeAreas({ onOpenBooking }: PracticeAreasProps) {
             Comprehensive Legal Practice Areas
           </h2>
           <p className="text-slate-600 dark:text-slate-300 text-base sm:text-lg">
-            Strategic representation across Guwahati High Court, statutory tribunals (DRT & AFT), Family Courts, CJM & District Courts across Assam.
+            Strategic representation across Gauhati High Court, statutory tribunals (DRT & AFT), Family Courts, CJM & District Courts across Assam.
           </p>
         </div>
 
