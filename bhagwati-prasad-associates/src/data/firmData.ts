@@ -55,7 +55,7 @@ export const firmInfo = {
   shortName: "Bhagawati Legal",
   legacy: "Carrying forward the legal heritage of Late Advocate Bhagawati Prasad (District Court Nagaon)",
   tagline: "Gauhati High Court & Appellate Legal Advocacy",
-  heroSubtitle: "A sole proprietary concern of Advocate Sumeet Gupta, carrying forward the legal heritage of Late Bhagawati Prasad (District Court Nagaon) and Senior Advocate Girish Kumar Gupta (Gauhati High Court). Comprehensive legal representation across Gauhati High Court, DRT, AFT, Family Court, CJM Court, and District & Sessions Courts of Assam.",
+  heroSubtitle: "A sole proprietary concern of Advocate Girish Kumar Gupta and Advocate Sumeet Gupta, carrying forward the legal heritage of Late Bhagawati Prasad (District Court Nagaon). Comprehensive legal representation across Gauhati High Court, DRT, AFT, Family Court, CJM Court, and District & Sessions Courts of Assam.",
   stats: [
     { label: "Generations of Legal Heritage", value: "3" },
     { label: "Jurisdiction & Reach", value: "Gauhati High Court & Assam" },

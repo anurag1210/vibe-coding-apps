@@ -22,7 +22,7 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-slate-400 leading-relaxed text-xs max-w-md">
-              {firmInfo.tagline}. A sole proprietary concern of Advocate Sumeet Gupta. Dedicated to courtroom advocacy across Gauhati High Court, DRT, AFT, CJM Court, and District Courts throughout Assam.
+              {firmInfo.tagline}. A sole proprietary concern of Advocate Girish Kumar Gupta and Advocate Sumeet Gupta. Dedicated to courtroom advocacy across Gauhati High Court, DRT, AFT, CJM Court, and District Courts throughout Assam.
             </p>
             <p className="text-[11px] text-gold-400 font-mono">
               {firmInfo.legacy}

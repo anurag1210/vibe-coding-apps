@@ -85,13 +85,13 @@ export default function AboutFirm() {
             {activeTab === "legacy" && (
               <div className="space-y-4 animate-in fade-in duration-300">
                 <h3 className="font-serif text-2xl font-bold text-slate-900 dark:text-white">
-                  Sole Proprietary Concern of Advocate Sumeet Gupta
+                  Sole Proprietary Concern of Advocate Girish Kumar Gupta & Advocate Sumeet Gupta
                 </h3>
                 <p className="text-slate-600 dark:text-slate-300 leading-relaxed text-sm sm:text-base">
-                  The firm is a sole proprietory concern of <strong className="text-slate-900 dark:text-white">Advocate Sumeet Gupta</strong>, whose grandfather <strong className="text-slate-900 dark:text-white">Late Bhagawati Prasad</strong> practiced Law in District Court Nagaon and father is practicing advocate in <strong className="text-slate-900 dark:text-white">Gauhati High Court</strong>.
+                  The firm is a sole proprietory concern of <strong className="text-slate-900 dark:text-white">Advocate Girish Kumar Gupta</strong> and <strong className="text-slate-900 dark:text-white">Advocate Sumeet Gupta</strong>, continuing the legal heritage of <strong className="text-slate-900 dark:text-white">Late Bhagawati Prasad</strong> (who practiced Law in District Court Nagaon), with senior courtroom advocacy in <strong className="text-slate-900 dark:text-white">Gauhati High Court</strong>.
                 </p>
                 <p className="text-slate-600 dark:text-slate-300 leading-relaxed text-sm sm:text-base">
-                  He has successfully tackled cases on Service matters and Bail matters in Gauhati High Court; cases in the Debt Recovery Tribunal (DRT), Armed Forces Tribunal (AFT), Family Court, Cheque bouncing under Section 138, and criminal cases in the CJM Court & District & Sessions Court Gauhati.
+                  Together they have successfully tackled cases on Service matters and Bail matters in Gauhati High Court; cases in the Debt Recovery Tribunal (DRT), Armed Forces Tribunal (AFT), Family Court, Cheque bouncing under Section 138, and criminal cases in the CJM Court & District & Sessions Court Gauhati.
                 </p>
                 <p className="text-slate-600 dark:text-slate-300 leading-relaxed text-sm sm:text-base">
                   In addition, the firm handles MACT cases and miscellaneous matters including Land Registration, Marriage Registration, Succession and Next of kin Certificates, Arbitration Matters, and Drafting of commercial and personal agreements.
@@ -101,8 +101,8 @@ export default function AboutFirm() {
                   <div className="p-4 rounded-xl bg-slate-50 dark:bg-slate-950/60 border border-slate-200 dark:border-slate-800 flex items-start gap-3 shadow-sm">
                     <CheckCircle className="w-5 h-5 text-amber-600 dark:text-gold-400 shrink-0 mt-0.5" />
                     <div>
-                      <h4 className="font-semibold text-slate-900 dark:text-white text-sm">Sole Proprietor Leadership</h4>
-                      <p className="text-xs text-slate-600 dark:text-slate-400">Led by Advocate Sumeet Gupta with direct, dedicated advocacy and prompt legal counseling.</p>
+                      <h4 className="font-semibold text-slate-900 dark:text-white text-sm">Chamber Leadership</h4>
+                      <p className="text-xs text-slate-600 dark:text-slate-400">Led by Advocate Girish Kumar Gupta and Advocate Sumeet Gupta with dedicated courtroom advocacy and legal counseling.</p>
                     </div>
                   </div>
                   <div className="p-4 rounded-xl bg-slate-50 dark:bg-slate-950/60 border border-slate-200 dark:border-slate-800 flex items-start gap-3 shadow-sm">

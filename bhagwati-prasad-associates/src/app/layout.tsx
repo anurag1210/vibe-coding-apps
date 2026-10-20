@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Bhagawati Legal Consultants & Advocates | Gauhati High Court & Assam",
-  description: "Bhagawati Legal Consultants & Advocates is a sole proprietary concern of Advocate Sumeet Gupta, continuing the legal heritage of Late Bhagawati Prasad (District Court Nagaon) and Senior Advocate Girish Kumar Gupta. Comprehensive legal advocacy in Gauhati High Court, DRT, AFT, Family Court, CJM Court, and District & Sessions Courts across Assam.",
+  description: "Bhagawati Legal Consultants & Advocates is a sole proprietary concern of Advocate Girish Kumar Gupta and Advocate Sumeet Gupta, continuing the legal heritage of Late Bhagawati Prasad (District Court Nagaon). Comprehensive legal advocacy in Gauhati High Court, DRT, AFT, Family Court, CJM Court, and District & Sessions Courts across Assam.",
   keywords: ["Bhagawati Legal Consultants & Advocates", "Advocate Sumeet Gupta", "Advocate Girish Kumar Gupta", "Gauhati High Court Advocates", "Gauhati Lawyers", "Service Matters Gauhati High Court", "Bail Matters High Court Assam", "DRT Gauhati", "AFT Gauhati", "Family Court Gauhati", "MACT Assam"],
 };
 

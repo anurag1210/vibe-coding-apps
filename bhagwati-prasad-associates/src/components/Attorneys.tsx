@@ -25,7 +25,7 @@ export default function Attorneys({ onOpenBooking }: AttorneysProps) {
             Our Advocates & Counsel
           </h2>
           <p className="text-slate-600 dark:text-slate-300 text-base sm:text-lg">
-            Direct courtroom representation and strategic counseling by Sole Proprietor Advocate Sumeet Gupta, guided by the senior jurisprudence of Advocate Girish Kumar Gupta in the Gauhati High Court.
+            Direct courtroom representation and strategic counseling by Senior Advocate Girish Kumar Gupta and Advocate Sumeet Gupta in the Gauhati High Court and Assam Courts.
           </p>
         </div>
 
