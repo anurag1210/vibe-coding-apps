@@ -84,9 +84,10 @@ export const attorneys: Attorney[] = [
     experience: "Sole Proprietor | Gauhati High Court & Assam Courts",
     image: "/sumeet-gupta.png",
     education: [
-      "B.A. LL.B (Honours)",
-      "Advocate - Gauhati High Court Bar Association",
-      "Specialized in Appellate Advocacy & Tribunal Litigation"
+      "BBM (Bachelor of Business Management)",
+      "LL.B (Bachelor of Laws)",
+      "MBA (Master of Business Administration)",
+      "Advocate - Gauhati High Court Bar Association"
     ],
     barEnrollment: "Gauhati High Court Bar Association",
     courts: [
@@ -128,6 +129,8 @@ export const attorneys: Attorney[] = [
     education: [
       "Master of Laws (LL.M)",
       "Bachelor of Laws (LL.B)",
+      "Bachelor of Engineering (B.E.)",
+      "Master of Business Administration (MBA)",
       "Senior Member - Gauhati High Court Bar Association"
     ],
     barEnrollment: "Gauhati High Court Bar Association",
