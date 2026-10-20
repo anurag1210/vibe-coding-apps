@@ -74,7 +74,9 @@ export default function ContactSection() {
                 </p>
                 <p>
                   <strong className="text-amber-800 dark:text-gold-400">Advocate Girish Kumar Gupta:</strong>{" "}
-                  <span className="text-slate-500 dark:text-slate-400">By Appointment</span>
+                  <a href={`tel:${firmInfo.contact.girishPhone}`} className="hover:underline font-mono text-slate-900 dark:text-white">
+                    {firmInfo.contact.girishPhone}
+                  </a>
                 </p>
               </div>
             </div>

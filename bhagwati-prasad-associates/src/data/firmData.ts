@@ -68,6 +68,7 @@ export const firmInfo = {
     chamberCity: "Gauhati",
     phone: "+91 70020 69417",
     sumeetPhone: "+91 70020 69417",
+    girishPhone: "+91 70028 68428",
     email: "advocatesumeetg@gmail.com",
     sumeetEmail: "advocatesumeetg@gmail.com",
     girishEmail: "mrgkgupta@gmail.com",
@@ -150,7 +151,7 @@ export const attorneys: Attorney[] = [
       "Guiding senior counsel for Bhagawati Legal Consultants & Advocates"
     ],
     quote: "The cornerstone of justice lies in the uncompromising fidelity to statutory law and unwavering advocacy for truth.",
-    phone: "+91 70020 69417",
+    phone: "+91 70028 68428",
     email: "mrgkgupta@gmail.com"
   }
 ];

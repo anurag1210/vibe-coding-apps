@@ -1,8 +1,8 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { X, Calendar, Clock, User, CheckCircle2, Shield, Scale, ChevronRight, Phone, MessageSquare } from "lucide-react";
-import { practiceAreas, firmInfo } from "@/data/firmData";
+import { practiceAreas, firmInfo, attorneys } from "@/data/firmData";
 
 interface BookingModalProps {
   isOpen: boolean;
@@ -33,7 +33,21 @@ export default function BookingModal({
 
   const [bookingRef, setBookingRef] = useState<string>("");
 
+  useEffect(() => {
+    if (isOpen) {
+      if (initialAttorney) {
+        setSelectedAttorney(initialAttorney);
+      }
+      if (initialPracticeArea) {
+        setSelectedArea(initialPracticeArea);
+      }
+      setStep(1);
+    }
+  }, [isOpen, initialAttorney, initialPracticeArea]);
+
   if (!isOpen) return null;
+
+  const activeAttorney = attorneys.find((a) => a.name === selectedAttorney) || attorneys[0];
 
   const handleNext = () => {
     if (step < 3) {
@@ -68,34 +82,75 @@ export default function BookingModal({
           <button
             onClick={onClose}
             className="p-2 rounded-full bg-slate-100 text-slate-500 hover:text-slate-900 hover:bg-slate-200 dark:bg-slate-800 dark:text-slate-400 dark:hover:text-white"
+            aria-label="Close booking modal"
           >
             <X className="w-5 h-5" />
           </button>
         </div>
 
-        {/* Instant Contact Ribbon */}
-        <div className="p-3.5 rounded-2xl bg-amber-500/10 border border-amber-500/30 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs">
-          <div className="flex items-center gap-2 text-amber-900 dark:text-gold-300 font-medium">
-            <Phone className="w-4 h-4 text-amber-600 dark:text-gold-400 shrink-0" />
-            <span>Direct Desk with <strong>Advocate Sumeet Gupta</strong>:</span>
+        {/* Instant Contact Ribbon with Both Advocates */}
+        <div className="p-3.5 sm:p-4 rounded-2xl bg-amber-500/10 border border-amber-500/30 space-y-2.5 text-xs">
+          <div className="flex items-center gap-2 text-amber-900 dark:text-gold-300 font-bold uppercase tracking-wider text-[11px]">
+            <Phone className="w-3.5 h-3.5 text-amber-600 dark:text-gold-400 shrink-0" />
+            <span>Direct Chamber Desks</span>
           </div>
-          <div className="flex items-center gap-2">
-            <a
-              href="tel:+917002069417"
-              className="px-3 py-1.5 rounded-xl bg-amber-500 hover:bg-amber-600 dark:bg-gold-500 dark:hover:bg-gold-400 text-slate-950 font-bold font-mono text-xs flex items-center gap-1.5 transition-colors shadow-sm"
-            >
-              <Phone className="w-3.5 h-3.5" />
-              <span>+91 70020 69417</span>
-            </a>
-            <a
-              href="https://wa.me/917002069417?text=Hello%20Advocate%20Sumeet%20Gupta,%20I%20would%20like%20to%20schedule%20a%20legal%20consultation."
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-3 py-1.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs flex items-center gap-1.5 transition-colors shadow-sm"
-            >
-              <MessageSquare className="w-3.5 h-3.5" />
-              <span>WhatsApp</span>
-            </a>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+            {/* Advocate Sumeet Gupta */}
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between p-2.5 rounded-xl bg-white/80 dark:bg-slate-950/80 border border-amber-500/20 shadow-sm gap-2">
+              <div className="min-w-0">
+                <p className="font-bold text-slate-900 dark:text-white text-xs truncate">Advocate Sumeet Gupta</p>
+                <p className="text-[11px] text-amber-800 dark:text-gold-400 font-mono font-medium">+91 70020 69417</p>
+              </div>
+              <div className="flex items-center gap-1.5 shrink-0">
+                <a
+                  href="tel:+917002069417"
+                  className="px-2.5 py-1 rounded-lg bg-amber-500 hover:bg-amber-600 dark:bg-gold-500 dark:hover:bg-gold-400 text-slate-950 font-bold font-mono text-[11px] flex items-center gap-1 transition-colors shadow-sm"
+                  title="Call Advocate Sumeet Gupta"
+                >
+                  <Phone className="w-3 h-3" />
+                  <span>Call</span>
+                </a>
+                <a
+                  href="https://wa.me/917002069417?text=Hello%20Advocate%20Sumeet%20Gupta,%20I%20would%20like%20to%20schedule%20a%20legal%20consultation."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-2.5 py-1 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-[11px] flex items-center gap-1 transition-colors shadow-sm"
+                  title="WhatsApp Advocate Sumeet Gupta"
+                >
+                  <MessageSquare className="w-3 h-3" />
+                  <span>WhatsApp</span>
+                </a>
+              </div>
+            </div>
+
+            {/* Advocate Girish Kumar Gupta */}
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between p-2.5 rounded-xl bg-white/80 dark:bg-slate-950/80 border border-amber-500/20 shadow-sm gap-2">
+              <div className="min-w-0">
+                <p className="font-bold text-slate-900 dark:text-white text-xs truncate">Advocate Girish Kumar Gupta</p>
+                <p className="text-[11px] text-amber-800 dark:text-gold-400 font-mono font-medium">+91 70028 68428</p>
+              </div>
+              <div className="flex items-center gap-1.5 shrink-0">
+                <a
+                  href="tel:+917002868428"
+                  className="px-2.5 py-1 rounded-lg bg-amber-500 hover:bg-amber-600 dark:bg-gold-500 dark:hover:bg-gold-400 text-slate-950 font-bold font-mono text-[11px] flex items-center gap-1 transition-colors shadow-sm"
+                  title="Call Advocate Girish Kumar Gupta"
+                >
+                  <Phone className="w-3 h-3" />
+                  <span>Call</span>
+                </a>
+                <a
+                  href="https://wa.me/917002868428?text=Hello%20Advocate%20Girish%20Kumar%20Gupta,%20I%20would%20like%20to%20schedule%20a%20legal%20consultation."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-2.5 py-1 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-[11px] flex items-center gap-1 transition-colors shadow-sm"
+                  title="WhatsApp Advocate Girish Kumar Gupta"
+                >
+                  <MessageSquare className="w-3 h-3" />
+                  <span>WhatsApp</span>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -108,25 +163,63 @@ export default function BookingModal({
           </div>
         )}
 
-        {/* Step 1: Consulting Advocate */}
+        {/* Step 1: Consulting Advocate Selection */}
         {step === 1 && (
           <div className="space-y-4 animate-in fade-in">
-            <h4 className="font-serif text-lg font-bold text-slate-900 dark:text-white">Your Consulting Advocate</h4>
+            <div className="flex items-center justify-between">
+              <h4 className="font-serif text-lg font-bold text-slate-900 dark:text-white">Select Your Consulting Advocate</h4>
+              <span className="text-[11px] text-slate-500 dark:text-slate-400">Click card to select</span>
+            </div>
             
-            {/* Fixed Sumeet Gupta card */}
-            <div className="p-4 rounded-2xl border bg-amber-50/70 border-amber-500 ring-2 ring-amber-500/30 dark:bg-slate-950 dark:border-gold-500 dark:ring-gold-500/40 shadow-sm dark:shadow-lg">
-              <div className="flex items-center gap-4">
-                <img src="/sumeet-gupta.png" alt="Advocate Sumeet Gupta" className="w-16 h-16 rounded-xl object-cover border-2 border-amber-400 dark:border-gold-400 shadow-md" />
-                <div>
-                  <h5 className="font-serif font-bold text-slate-900 dark:text-white text-base">Advocate Sumeet Gupta</h5>
-                  <p className="text-xs text-amber-800 dark:text-gold-400 font-semibold">Sole Proprietor & Practicing Advocate</p>
-                  <p className="text-[11px] text-slate-500 dark:text-slate-400 font-mono">📞 +91 70020 69417</p>
-                  <p className="text-[11px] text-slate-500 dark:text-slate-400 font-mono">✉️ advocatesumeetg@gmail.com</p>
-                </div>
-              </div>
-              <p className="text-xs text-slate-600 dark:text-slate-300 mt-3 leading-relaxed">
-                Gauhati High Court | DRT | AFT | Family Court | CJM & District Sessions Court | MACT
-              </p>
+            <div className="grid grid-cols-1 gap-3">
+              {attorneys.map((attorney) => {
+                const isSelected = selectedAttorney === attorney.name;
+                return (
+                  <div
+                    key={attorney.id}
+                    onClick={() => setSelectedAttorney(attorney.name)}
+                    className={`p-4 rounded-2xl border transition-all cursor-pointer relative ${
+                      isSelected
+                        ? "bg-amber-50/80 border-amber-500 ring-2 ring-amber-500/30 dark:bg-slate-950 dark:border-gold-500 dark:ring-gold-500/40 shadow-md"
+                        : "bg-slate-50/70 border-slate-200 hover:border-slate-300 dark:bg-slate-950/40 dark:border-slate-800 hover:dark:border-slate-700 opacity-85 hover:opacity-100"
+                    }`}
+                  >
+                    <div className="flex items-start gap-4">
+                      <img
+                        src={attorney.image}
+                        alt={attorney.name}
+                        className="w-16 h-16 rounded-xl object-cover border-2 border-amber-400 dark:border-gold-400 shadow-md shrink-0"
+                      />
+                      <div className="flex-1 min-w-0 space-y-1">
+                        <div className="flex items-center justify-between gap-2">
+                          <h5 className="font-serif font-bold text-slate-900 dark:text-white text-base">
+                            {attorney.name}
+                          </h5>
+                          {isSelected ? (
+                            <span className="flex items-center gap-1 text-[11px] font-bold text-amber-800 dark:text-gold-400 bg-amber-100 dark:bg-gold-500/10 px-2.5 py-0.5 rounded-full border border-amber-300 dark:border-gold-500/30 shrink-0">
+                              <CheckCircle2 className="w-3.5 h-3.5" /> Selected Counsel
+                            </span>
+                          ) : (
+                            <span className="text-[11px] font-medium text-slate-500 dark:text-slate-400 shrink-0">
+                              Select
+                            </span>
+                          )}
+                        </div>
+                        <p className="text-xs text-amber-800 dark:text-gold-400 font-semibold">
+                          {attorney.role}
+                        </p>
+                        <div className="flex flex-wrap items-center gap-x-4 gap-y-1 pt-1 text-[11px] text-slate-600 dark:text-slate-300 font-mono">
+                          <span>📞 <strong className="text-slate-900 dark:text-white">{attorney.phone}</strong></span>
+                          <span>✉️ {attorney.email}</span>
+                        </div>
+                        <p className="text-[11px] text-slate-500 dark:text-slate-400 pt-1 leading-relaxed">
+                          {attorney.courts.join(" • ")}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
             </div>
 
             {/* Consultation Mode: In-Person Only */}
@@ -137,7 +230,6 @@ export default function BookingModal({
             </div>
           </div>
         )}
-
 
         {/* Step 2: Practice Area Selection */}
         {step === 2 && (
@@ -245,27 +337,28 @@ export default function BookingModal({
               </span>
               <h4 className="font-serif text-2xl font-bold text-slate-900 dark:text-white">Reference Code: {bookingRef}</h4>
               <p className="text-xs text-slate-600 dark:text-slate-300 max-w-md mx-auto">
-                Thank you, <strong className="text-slate-900 dark:text-white">{clientInfo.name}</strong>. Your consultation has been routed directly to <strong className="text-amber-800 dark:text-gold-400">{selectedAttorney}</strong> for {selectedArea}.
+                Thank you, <strong className="text-slate-900 dark:text-white">{clientInfo.name}</strong>. Your consultation has been routed directly to <strong className="text-amber-800 dark:text-gold-400">{activeAttorney.name}</strong> for {selectedArea}.
               </p>
             </div>
 
             <div className="p-4 rounded-2xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 text-left text-xs space-y-2 max-w-md mx-auto font-mono">
-              <p><span className="text-slate-500 dark:text-slate-400">Direct Contact:</span> <strong className="text-amber-800 dark:text-gold-300">+91 70020 69417 (Advocate Sumeet Gupta)</strong></p>
-              <p><span className="text-slate-500 dark:text-slate-400">Email:</span> <strong className="text-slate-900 dark:text-white">advocatesumeetg@gmail.com / mrgkgupta@gmail.com</strong></p>
-              <p><span className="text-slate-500 dark:text-slate-400">Mode:</span> <strong className="text-slate-900 dark:text-white">{consultType === "chamber" ? "In-Person Gauhati Chamber" : "Secure Video Consult"}</strong></p>
+              <p><span className="text-slate-500 dark:text-slate-400">Consulting Counsel:</span> <strong className="text-amber-800 dark:text-gold-300">{activeAttorney.name}</strong></p>
+              <p><span className="text-slate-500 dark:text-slate-400">Direct Contact:</span> <strong className="text-amber-800 dark:text-gold-300">{activeAttorney.phone}</strong></p>
+              <p><span className="text-slate-500 dark:text-slate-400">Email:</span> <strong className="text-slate-900 dark:text-white">{activeAttorney.email}</strong></p>
+              <p><span className="text-slate-500 dark:text-slate-400">Mode:</span> <strong className="text-slate-900 dark:text-white">In-Person Gauhati Chamber</strong></p>
               <p><span className="text-slate-500 dark:text-slate-400">Date & Slot:</span> <strong className="text-amber-800 dark:text-gold-300">{date} at {time}</strong></p>
               <p><span className="text-slate-500 dark:text-slate-400">Chamber:</span> {firmInfo.contact.address} (Landmark: {firmInfo.contact.landmark})</p>
             </div>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-3 pt-2">
               <a
-                href="https://wa.me/917002069417?text=Hello%20Advocate%20Sumeet%20Gupta,%20I%20have%20booked%20a%20consultation%20with%20reference%20code%20BLA."
+                href={`https://wa.me/${activeAttorney.phone.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(`Hello ${activeAttorney.name}, I have booked a legal consultation with reference code ${bookingRef} for ${selectedArea}.`)}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full sm:w-auto bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-6 py-3 rounded-xl text-xs flex items-center justify-center gap-2 shadow-lg"
               >
                 <MessageSquare className="w-4 h-4" />
-                <span>Open WhatsApp to Confirm</span>
+                <span>Confirm on WhatsApp ({activeAttorney.name.includes("Girish") ? "Adv. Girish Gupta" : "Adv. Sumeet Gupta"})</span>
               </a>
 
               <button

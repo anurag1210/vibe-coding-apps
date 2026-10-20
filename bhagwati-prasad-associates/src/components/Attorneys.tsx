@@ -220,7 +220,7 @@ export default function Attorneys({ onOpenBooking }: AttorneysProps) {
                 }}
                 className="w-full sm:w-auto bg-gradient-to-r from-gold-500 to-amber-600 text-slate-950 font-bold px-5 py-2 rounded-xl text-xs shadow-md"
               >
-                Book Consultation with {selectedAttorney.name.split(" ")[0]}
+                Book Consultation with {selectedAttorney.name}
               </button>
             </div>
 
