@@ -85,10 +85,10 @@ export default function AboutFirm() {
             {activeTab === "legacy" && (
               <div className="space-y-4 animate-in fade-in duration-300">
                 <h3 className="font-serif text-2xl font-bold text-slate-900 dark:text-white">
-                  Sole Proprietary Concern of Advocate Girish Kumar Gupta & Advocate Sumeet Gupta
+                  A Joint Initiative
                 </h3>
                 <p className="text-slate-600 dark:text-slate-300 leading-relaxed text-sm sm:text-base">
-                  The firm is a sole proprietory concern of <strong className="text-slate-900 dark:text-white">Advocate Girish Kumar Gupta</strong> and <strong className="text-slate-900 dark:text-white">Advocate Sumeet Gupta</strong>, continuing the legal heritage of <strong className="text-slate-900 dark:text-white">Late Bhagawati Prasad</strong> (who practiced Law in District Court Nagaon), with senior courtroom advocacy in <strong className="text-slate-900 dark:text-white">Gauhati High Court</strong>.
+                  The firm is a joint initiative continuing the legal heritage of <strong className="text-slate-900 dark:text-white">Late Bhagawati Prasad</strong> (who practiced Law in District Court Nagaon), with senior courtroom advocacy in <strong className="text-slate-900 dark:text-white">Gauhati High Court</strong>.
                 </p>
                 <p className="text-slate-600 dark:text-slate-300 leading-relaxed text-sm sm:text-base">
                   Together they have successfully tackled cases on Service matters and Bail matters in Gauhati High Court; cases in the Debt Recovery Tribunal (DRT), Armed Forces Tribunal (AFT), Family Court, Cheque bouncing under Section 138, and criminal cases in the CJM Court & District & Sessions Court Gauhati.

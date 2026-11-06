@@ -140,7 +140,7 @@ export default function BookingModal({
                 <div className="flex items-center gap-2 flex-wrap">
                   <p className="font-bold text-slate-900 dark:text-white text-sm">Advocate Sumeet Gupta</p>
                   <span className="text-[10px] font-semibold text-amber-800 bg-amber-100 dark:text-gold-400 dark:bg-gold-500/10 px-2 py-0.5 rounded-full border border-amber-200 dark:border-gold-500/20">
-                    Sole Proprietor & Practicing Advocate
+                    Practicing Advocate & Counsel
                   </span>
                 </div>
                 <p className="text-xs text-amber-800 dark:text-gold-400 font-mono font-medium pt-0.5">+91 70020 69417</p>
